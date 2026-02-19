@@ -4,6 +4,13 @@
 #define SSGT_VARIANT "Staff Sergeant"
 #define SRSGT_VARIANT "Senior Sergeant"
 
+#define MICH_VARIANT_UPP "Michman"
+#define GL_STAR_VARIANT_UPP "Glavny Starshina"
+#define SPS_VARIANT_UPP "Starshina Pervoy Stepeni"
+#define SVS_VARIANT_UPP "Starshina Vtoroy Stepeni"
+#define ST_MAT_VARIANT_UPP "Starshiy Matros"
+#define MAT_VARIANT_UPP "Matros"
+
 /datum/job/marine/leader
 	title = JOB_SQUAD_LEADER
 	total_positions = 4
@@ -61,10 +68,10 @@ OverrideTimelock(/datum/job/marine/leader, list(
 	title = JOB_SQUAD_LEADER_UPP
 	gear_preset = /datum/equipment_preset/uscm/leader/upp
 	gear_preset_secondary = /datum/equipment_preset/uscm/leader/upp/senior_sergeant
-	job_options = list(SRSGT_VARIANT = "SrSGT", SGTMJR_VARIANT = "SGTMJR")
+	job_options = list(GL_STAR_VARIANT_UPP = "GLSTAR", MICH_VARIANT_UPP = "MICH")
 
 /datum/job/marine/leader/ai/upp/handle_job_options(option)
-	if(option != SRSGT_VARIANT)
+	if(option != GL_STAR_VARIANT_UPP)
 		gear_preset = initial(gear_preset)
 	else
 		gear_preset = gear_preset_secondary
@@ -130,3 +137,10 @@ OverrideTimelock(/datum/job/marine/leader, list(
 #undef SGTMJR_VARIANT
 #undef SSGT_VARIANT
 #undef SRSGT_VARIANT
+
+#undef MICH_VARIANT_UPP
+#undef GL_STAR_VARIANT_UPP
+#undef SPS_VARIANT_UPP
+#undef SVS_VARIANT_UPP
+#undef ST_MAT_VARIANT_UPP
+#undef MAT_VARIANT_UPP
