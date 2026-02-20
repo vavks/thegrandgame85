@@ -1101,7 +1101,7 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 
 /obj/item/clothing/head/helmet/marine/veteran/pmc/commando
 	name = "\improper W-Y Mk17 Commando helmet"
-	desc = "A fully enclosed, armored helmet made to complete the M5X exoskeleton armor."
+	desc = "A standard enclosed helmet utilized by Weyland-Yutani Commandos."
 	icon_state = "commando_helmet"
 	item_state = "commando_helmet"
 	unacidable = 1
