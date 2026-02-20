@@ -39,6 +39,12 @@
 /atom/movable/screen/text/screen_text/picture/gamma_troop
 	image_to_play = "gamma_troop"
 
+/atom/movable/screen/text/screen_text/picture/uniform_troop
+	image_to_play = "uniform_troop"
+
+/atom/movable/screen/text/screen_text/picture/naval_recon
+	image_to_play = "naval_recon"
+
 /atom/movable/screen/text/screen_text/picture/starting
 	layer = ABOVE_INTRO_LAYER
 	plane = FULLSCREEN_PLANE
