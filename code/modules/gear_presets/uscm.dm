@@ -179,7 +179,7 @@
 	name = "UPP Squad Machinegunner"
 	access = list(ACCESS_UPP_GENERAL, ACCESS_UPP_MACHINEGUN)
 	assignment = JOB_SQUAD_SMARTGUN_UPP
-	paygrades = list(PAY_SHORT_UE4 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_UE3 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "MG"
 	languages = list(LANGUAGE_RUSSIAN, LANGUAGE_CHINESE)
 	faction_group = list(FACTION_UPP)
@@ -187,10 +187,6 @@
 
 /datum/equipment_preset/uscm/sg/upp/load_gear(mob/living/carbon/human/new_human)
 	new_human.undershirt = "Naval Infantry Telnyashka"
-
-/datum/equipment_preset/uscm/sg/upp/corporal
-	name = parent_type::name + " (E3 Rank)"
-	paygrades = list(PAY_SHORT_UE3 = JOB_PLAYTIME_TIER_0)
 
 /datum/equipment_preset/uscm/sg/upp/senior_private
 	name = parent_type::name + " (E2 Rank)"
@@ -272,20 +268,16 @@
 
 /datum/equipment_preset/uscm/medic/upp
 	name = "UPP Platoon Sanitar"
-	paygrades = list(PAY_SHORT_UE4 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_UE3 = JOB_PLAYTIME_TIER_0)
 	access = list(ACCESS_UPP_GENERAL, ACCESS_UPP_MEDPREP, ACCESS_UPP_MEDICAL)
 	assignment = JOB_SQUAD_MEDIC_UPP
-	role_comm_title = "PltStr"
+	role_comm_title = "Sanitar"
 	languages = list(LANGUAGE_RUSSIAN, LANGUAGE_CHINESE)
 	faction_group = list(FACTION_UPP)
 	faction = FACTION_UPP
 
 /datum/equipment_preset/uscm/medic/upp/load_gear(mob/living/carbon/human/new_human)
 	new_human.undershirt = "Naval Infantry Telnyashka"
-
-/datum/equipment_preset/uscm/medic/upp/corporal
-	name = parent_type::name + " (E3 Rank)"
-	paygrades = list(PAY_SHORT_UE3 = JOB_PLAYTIME_TIER_0)
 
 /datum/equipment_preset/uscm/medic/upp/senior_private
 	name = parent_type::name + " (E2 Rank)"
@@ -335,7 +327,7 @@
 	name = "UPP Squad Sergeant"
 	assignment = JOB_SQUAD_TEAM_LEADER_UPP
 	role_comm_title = "SqSgt"
-	paygrades = list(PAY_SHORT_UE5 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_UE4 = JOB_PLAYTIME_TIER_0)
 	access = list(ACCESS_UPP_GENERAL, ACCESS_UPP_TLPREP)
 	languages = list(LANGUAGE_RUSSIAN, LANGUAGE_CHINESE)
 	faction_group = list(FACTION_UPP)
@@ -345,8 +337,8 @@
 	new_human.undershirt = "Naval Infantry Telnyashka"
 
 /datum/equipment_preset/uscm/tl/upp/junior_sergeant
-	name = parent_type::name + " (E4 Rank)"
-	paygrades = list(PAY_SHORT_UE4 = JOB_PLAYTIME_TIER_0)
+	name = parent_type::name + " (E3 Rank)"
+	paygrades = list(PAY_SHORT_UE3 = JOB_PLAYTIME_TIER_0)
 
 /datum/equipment_preset/uscm/tl/forecon
 	name = "FORECON Assistant Squad Leader"
@@ -411,7 +403,7 @@
 	assignment = JOB_SQUAD_LEADER_UPP
 	role_comm_title = "PltSgt"
 	access = list(ACCESS_UPP_GENERAL, ACCESS_UPP_LEADERSHIP, ACCESS_UPP_FLIGHT)
-	paygrades = list(PAY_SHORT_UE7 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_UE6 = JOB_PLAYTIME_TIER_0)
 	languages = list(LANGUAGE_RUSSIAN, LANGUAGE_ENGLISH, LANGUAGE_CHINESE)
 	faction_group = list(FACTION_UPP)
 	faction = FACTION_UPP
@@ -420,8 +412,8 @@
 	new_human.undershirt = "Naval Infantry Telnyashka"
 
 /datum/equipment_preset/uscm/leader/upp/senior_sergeant
-	name = parent_type::name + " (E6 Rank)"
-	paygrades = list(PAY_SHORT_UE6 = JOB_PLAYTIME_TIER_0)
+	name = parent_type::name + " (E5 Rank)"
+	paygrades = list(PAY_SHORT_UE5 = JOB_PLAYTIME_TIER_0)
 
 /datum/equipment_preset/uscm/leader/forecon
 	name = "FORECON Squad Leader"

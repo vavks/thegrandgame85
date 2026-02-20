@@ -3,6 +3,9 @@
 #define SR_LT_VARIANT "Senior Lieutenant"
 #define SECOND_LT_VARIANT "Second Lieutenant"
 #define JR_LT_VARIANT "Junior Lieutenant"
+
+#define ML_LT_VARIANT_UPP "Mladshiy Lietenant"
+#define ST_LT_VARIANT_UPP "Starshiy Lietenant"
 /datum/job/command/bridge
 	title = JOB_SO
 	total_positions = 4
@@ -80,11 +83,11 @@ OverrideTimelock(/datum/job/command/bridge, list(
 	title = JOB_SO_UPP
 	gear_preset = /datum/equipment_preset/uscm_ship/so/upp
 	gear_preset_secondary = /datum/equipment_preset/uscm_ship/so/upp/lesser_rank
-	job_options = list(JR_LT_VARIANT = "JrLT", SR_LT_VARIANT = "SrLT")
+	job_options = list(ML_LT_VARIANT_UPP = "MlLT", ST_LT_VARIANT_UPP = "StLT")
 
 /datum/job/command/bridge/ai/upp/handle_job_options(option)
 	gear_preset = initial(gear_preset)
-	if(option == JR_LT_VARIANT)
+	if(option == ML_LT_VARIANT_UPP)
 		gear_preset = gear_preset_secondary
 
 /obj/effect/landmark/start/bridge/upp
@@ -121,3 +124,6 @@ OverrideTimelock(/datum/job/command/bridge, list(
 #undef SR_LT_VARIANT
 #undef SECOND_LT_VARIANT
 #undef JR_LT_VARIANT
+
+#undef ML_LT_VARIANT_UPP
+#undef ST_LT_VARIANT_UPP

@@ -3,6 +3,13 @@
 #define CPL_VARIANT "Corporal"
 #define JSGT_VARIANT "Junior Sergeant"
 
+#define MICH_VARIANT_UPP "Michman"
+#define GL_STAR_VARIANT_UPP "Glavny Starshina"
+#define SPS_VARIANT_UPP "Starshina Pervoy Stepeni"
+#define SVS_VARIANT_UPP "Starshina Vtoroy Stepeni"
+#define ST_MAT_VARIANT_UPP "Starshiy Matros"
+#define MAT_VARIANT_UPP "Matros"
+
 /datum/job/marine/tl
 	title = JOB_SQUAD_TEAM_LEADER
 	total_positions = 8
@@ -54,11 +61,11 @@
 	title = JOB_SQUAD_TEAM_LEADER_UPP
 	gear_preset = /datum/equipment_preset/uscm/tl/upp
 	gear_preset_secondary = /datum/equipment_preset/uscm/tl/upp/junior_sergeant
-	job_options = list(JSGT_VARIANT = "JrSGT", SGT_VARIANT = "SGT")
+	job_options = list(SVS_VARIANT_UPP = "SVS", SPS_VARIANT_UPP = "SPS")
 
 /datum/job/marine/tl/ai/upp/handle_job_options(option)
 	gear_preset = initial(gear_preset)
-	if(option == JSGT_VARIANT)
+	if(option == SVS_VARIANT_UPP)
 		gear_preset = gear_preset_secondary
 
 /datum/job/marine/tl/ai/forecon
@@ -142,3 +149,10 @@
 #undef SGT_VARIANT
 #undef CPL_VARIANT
 #undef JSGT_VARIANT
+
+#undef MICH_VARIANT_UPP
+#undef GL_STAR_VARIANT_UPP
+#undef SPS_VARIANT_UPP
+#undef SVS_VARIANT_UPP
+#undef ST_MAT_VARIANT_UPP
+#undef MAT_VARIANT_UPP

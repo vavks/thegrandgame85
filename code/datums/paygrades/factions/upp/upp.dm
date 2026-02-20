@@ -8,44 +8,38 @@
 
 /datum/paygrade/upp/ue1
 	paygrade = PAY_SHORT_UE1
-	name = "Private"
-	prefix = "Pvt."
+	name = "Matros"
+	prefix = "Mat."
 
 /datum/paygrade/upp/ue2
 	paygrade = PAY_SHORT_UE2
-	name = "Senior Private"
-	prefix = "SrPvt."
+	name = "Starshiy Matros"
+	prefix = "StMat."
 	pay_multiplier = 0.2
 
 /datum/paygrade/upp/ue3
 	paygrade = PAY_SHORT_UE3
-	name = "Corporal"
-	prefix = "Cpl."
+	name = "Starshina Vtoroy Stepeni"
+	prefix = "SVS."
 	pay_multiplier = 0.3
 
 /datum/paygrade/upp/ue4
 	paygrade = PAY_SHORT_UE4
-	name = "Junior Sergeant"
-	prefix = "JrSgt."
+	name = "Starshina Pervoy Stepeni"
+	prefix = "SPS."
 	pay_multiplier = 0.5
 
 /datum/paygrade/upp/ue5
 	paygrade = PAY_SHORT_UE5
-	name = "Sergeant"
-	prefix = "Sgt."
+	name = "Glavny Starshina"
+	prefix = "GlStar."
 	pay_multiplier = 0.7
 
 /datum/paygrade/upp/ue6
 	paygrade = PAY_SHORT_UE6
-	name = "Senior Sergeant"
-	prefix = "SrSgt."
+	name = "Michman"
+	prefix = "Mich."
 	pay_multiplier = 0.9
-
-/datum/paygrade/upp/ue7
-	paygrade = PAY_SHORT_UE7
-	name = "Sergeant Major"
-	prefix = "SgtMaj."
-	pay_multiplier = 1
 
 //UPP Commandos
 /datum/paygrade/upp/uk1
@@ -71,15 +65,15 @@
 //UPP Officers
 /datum/paygrade/upp/uo1
 	paygrade = PAY_SHORT_UO1
-	name = "Junior Lieutenant"
-	prefix = "Jr. Lt."
+	name = "Mladshiy Lietenant"
+	prefix = "Ml. Lt."
 	pay_multiplier = 1.25
 	officer_grade = GRADE_OFFICER
 
 /datum/paygrade/upp/uo2
 	paygrade = PAY_SHORT_UO2
-	name = "Senior Lieutenant"
-	prefix = "Sr. LT."
+	name = "Starshiy Lietenant"
+	prefix = "St. LT."
 	pay_multiplier = 1.5
 	officer_grade = GRADE_OFFICER
 

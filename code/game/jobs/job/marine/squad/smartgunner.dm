@@ -6,6 +6,13 @@
 #define SR_PVT_VARIANT "Senior Private"
 #define PVT_VARIANT "Private"
 
+#define MICH_VARIANT_UPP "Michman"
+#define GL_STAR_VARIANT_UPP "Glavny Starshina"
+#define SPS_VARIANT_UPP "Starshina Pervoy Stepeni"
+#define SVS_VARIANT_UPP "Starshina Vtoroy Stepeni"
+#define ST_MAT_VARIANT_UPP "Starshiy Matros"
+#define MAT_VARIANT_UPP "Matros"
+
 /datum/job/marine/smartgunner
 	title = JOB_SQUAD_SMARTGUN
 	total_positions = 4
@@ -84,18 +91,15 @@
 /datum/job/marine/smartgunner/ai/upp
 	title = JOB_SQUAD_SMARTGUN_UPP
 	gear_preset = /datum/equipment_preset/uscm/sg/upp
-	gear_preset_secondary = /datum/equipment_preset/uscm/sg/upp/corporal
-	gear_preset_tertiary = /datum/equipment_preset/uscm/sg/upp/senior_private
-	gear_preset_quaternary = /datum/equipment_preset/uscm/sg/upp/private
-	job_options = list(PVT_VARIANT = "PVT", SR_PVT_VARIANT = "SrPVT", CPL_VARIANT = "CPL", JSGT_VARIANT = "JrSGT")
+	gear_preset_secondary = /datum/equipment_preset/uscm/sg/upp/senior_private
+	gear_preset_tertiary = /datum/equipment_preset/uscm/sg/upp/private
+	job_options = list(MAT_VARIANT_UPP = "MAT", ST_MAT_VARIANT_UPP = "STMAT", SVS_VARIANT_UPP = "SVS")
 
 /datum/job/marine/smartgunner/ai/upp/handle_job_options(option)
 	gear_preset = initial(gear_preset)
-	if(option == PVT_VARIANT)
-		gear_preset = gear_preset_quaternary
-	if(option == SR_PVT_VARIANT)
+	if(option == MAT_VARIANT_UPP)
 		gear_preset = gear_preset_tertiary
-	if(option == CPL_VARIANT)
+	if(option == ST_MAT_VARIANT_UPP)
 		gear_preset = gear_preset_secondary
 
 /datum/job/marine/smartgunner/ai/forecon
@@ -172,3 +176,10 @@
 #undef PFC_VARIANT
 #undef SR_PVT_VARIANT
 #undef PVT_VARIANT
+
+#undef MICH_VARIANT_UPP
+#undef GL_STAR_VARIANT_UPP
+#undef SPS_VARIANT_UPP
+#undef SVS_VARIANT_UPP
+#undef ST_MAT_VARIANT_UPP
+#undef MAT_VARIANT_UPP
