@@ -84,3 +84,48 @@
 	access = list(ACCESS_WY_GENERAL, ACCESS_TWE_COMMANDO, ACCESS_TWE_HEVWEAPPREP)
 	assignment = JOB_TWE_RMC_BREACHER
 	rank = JOB_TWE_RMC_BREACHER
+
+//*****************************************************************************************************/
+/datum/equipment_preset/uscm/rmc/synth
+	name = "Royal Marine Commando, Combat Synthetic"
+	flags = EQUIPMENT_PRESET_EXTRA
+	languages = ALL_SYNTH_LANGUAGES
+	skills = /datum/skills/synthetic
+	role_comm_title = "RM CSyn"
+	assignment = JOB_TWE_RMC_SYNTH
+	rank = JOB_TWE_RMC_SYNTH
+	paygrades = list(PAY_SHORT_SYN = JOB_PLAYTIME_TIER_0)
+	access = list(ACCESS_WY_GENERAL, ACCESS_WY_FLIGHT, ACCESS_TWE_ENGINEERING, ACCESS_TWE_COMMANDO, ACCESS_TWE_LEADERSHIP, ACCESS_TWE_TLPREP, ACCESS_TWE_ARMORY, ACCESS_TWE_HEVWEAPPREP, ACCESS_TWE_SNIPERPREP, ACCESS_TWE_ENGPREP, ACCESS_TWE_MEDICAL, ACCESS_MARINE_SYNTH)
+	idtype = /obj/item/card/id/gold
+
+/datum/equipment_preset/uscm/rmc/synth/load_race(mob/living/carbon/human/new_human)
+	new_human.set_species(SYNTH_GEN_THREE)
+
+/datum/equipment_preset/uscm/rmc/synth/load_gear(mob/living/carbon/human/new_human)
+	new_human.allow_gun_usage = TRUE
+	//face
+	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/solardevils/rmc, WEAR_L_EAR)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/night/experimental_mesons, WEAR_EYES)
+	//head
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/cmcap/royal_marine, WEAR_HEAD)
+	//uniform
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/veteran/royal_marine, WEAR_BODY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/storage/surg_vest/drop_black/equipped, WEAR_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/patch/twe, WEAR_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/patch/royal_marines, WEAR_ACCESSORY)
+	//jacket
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/veteran/royal_marine, WEAR_JACKET)
+	//back
+	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/lightpack, WEAR_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/device/healthanalyzer/soul, WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/tool/crowbar/tactical, WEAR_IN_BACK)
+	//waist
+	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/medical/lifesaver/rmc/synth, WEAR_WAIST)
+	//limbs
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/marine/rmc/knife, WEAR_FEET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/gloves/marine, WEAR_HANDS)
+	//pockets
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/medical/full, WEAR_L_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/tools/synth, WEAR_R_STORE)
+
+//*****************************************************************************************************/

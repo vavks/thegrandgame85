@@ -2292,6 +2292,36 @@
 	new /obj/item/stack/medical/advanced/bruise_pack(src)
 	new /obj/item/stack/medical/advanced/ointment(src)
 
+/obj/item/storage/belt/medical/lifesaver/rmc
+	name = "\improper L75 pattern lifesaver bag"
+	desc = "The L75 is the standard load-bearing equipment of the RMC. This configuration mounts a duffel bag filled with a range of injectors and light medical supplies; although, it is uncommon among RMC medics."
+	icon_state = "d_medicbag"
+	item_state = "d_medicbag"
+	has_gamemode_skin = FALSE
+
+/obj/item/storage/belt/medical/lifesaver/rmc/synth/fill_preset_inventory()
+	new /obj/item/storage/pill_bottle/bicaridine(src)
+	new /obj/item/storage/pill_bottle/bicaridine(src)
+	new /obj/item/storage/pill_bottle/kelotane(src)
+	new /obj/item/storage/pill_bottle/kelotane(src)
+	new /obj/item/storage/pill_bottle/tramadol(src)
+	new /obj/item/storage/pill_bottle/tramadol(src)
+	new /obj/item/storage/pill_bottle/antitox(src)
+	new /obj/item/storage/pill_bottle/imialk(src)
+	new /obj/item/storage/pill_bottle/inaprovaline(src)
+	new /obj/item/stack/medical/advanced/bruise_pack(src)
+	new /obj/item/stack/medical/advanced/bruise_pack(src)
+	new /obj/item/stack/medical/advanced/bruise_pack(src)
+	new /obj/item/stack/medical/advanced/ointment(src)
+	new /obj/item/stack/medical/advanced/ointment(src)
+	new /obj/item/stack/medical/advanced/ointment(src)
+	new /obj/item/stack/medical/splint(src)
+	new /obj/item/stack/medical/splint(src)
+	new /obj/item/stack/medical/splint(src)
+	new /obj/item/reagent_container/hypospray/autoinjector/dexalinp(src)
+	new /obj/item/reagent_container/hypospray/autoinjector/oxycodone(src)
+	new /obj/item/reagent_container/hypospray/autoinjector/iron(src)
+
 /obj/item/storage/belt/gun/l905
 	name = "\improper L165 gunbelt"
 	desc = "A belt of finely-tooled leather, with holster & pouches for most kinds of sidearms and corresponding ammo."

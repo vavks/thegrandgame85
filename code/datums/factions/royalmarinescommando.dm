@@ -11,6 +11,8 @@
 	else if(ID)
 		_role = ID.rank
 	switch(_role)
+		if(JOB_TWE_RMC_SYNTH)
+			hud_icon_state = "syn"
 		if(JOB_TWE_RMC_COMMANDER)
 			hud_icon_state = "commander"
 		if(JOB_TWE_RMC_LIEUTENANT)
