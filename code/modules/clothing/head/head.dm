@@ -384,15 +384,6 @@
 	icon_state = "pmc_hat"
 	flags_marine_hat = HAT_GARB_OVERLAY
 
-/obj/item/clothing/head/cmo
-	name = "\improper Chief Medical Officer's Peaked Cap"
-	desc = "A peaked cap given to high-ranking civilian medical officers. Looks just a touch silly."
-	icon = 'icons/obj/items/clothing/cm_hats.dmi'
-	icon_state = "cmohat"
-	item_icons = list(
-		WEAR_HEAD = 'icons/mob/humans/onmob/head_1.dmi'
-	)
-
 /obj/item/clothing/head/cmcap/corrections
 	name = "dark blue utility cap"
 	desc = "A dark blue utility cap."
@@ -401,7 +392,7 @@
 
 //============================//BERETS\\=================================\\
 //=======================================================================\\
-//Berets DO NOT have armor, so they have their own category. PMC caps are helmets, so they're in helmets.dm.
+//Berets DO NOT have armor, so they have their own category. PMC caps are helmets, so they're in helmets.dm. <- me when i lie
 
 /obj/item/clothing/head/beret/cm
 	name = "\improper Beret"
@@ -544,44 +535,6 @@
 	desc = "A dark blue, custom-tailored beret signifying The Colonel. Definitely not an alias for a General."
 	icon_state = "cdrechiefberet"
 
-/obj/item/clothing/head/marine/peaked
-	name = "marine peaked cap"
-	desc = "A peaked cap. Wearer may suffer the heavy weight of responsibility upon their head and shoulders."
-	icon = 'icons/obj/items/clothing/cm_hats.dmi'
-	icon_state = "marine_formal"
-	item_icons = list(
-		WEAR_HEAD = 'icons/mob/humans/onmob/head_1.dmi'
-	)
-
-/obj/item/clothing/head/marine/peaked/service
-	name = "marine service peaked cap"
-	desc = "A peaked cap. Wearer may suffer the heavy weight of responsibility upon their head and shoulders."
-	icon = 'icons/obj/items/clothing/cm_hats.dmi'
-	icon_state = "marine_service"
-	item_icons = list(
-		WEAR_HEAD = 'icons/mob/humans/onmob/head_1.dmi'
-	)
-
-/obj/item/clothing/head/marine/peaked/captain
-	name = "marine commanding officer peaked cap"
-	desc = "A peaked cap with the commanding officer's insignia emblazoned on it. Wearer may suffer the heavy weight of responsibility upon their head and shoulders."
-	icon = 'icons/obj/items/clothing/cm_hats.dmi'
-	icon_state = "copeaked"
-	item_icons = list(
-		WEAR_HEAD = 'icons/mob/humans/onmob/head_1.dmi'
-	)
-	black_market_value = 30
-
-/obj/item/clothing/head/marine/peaked/captain/white
-	name = "commanding officer's dress white peaked cap"
-	desc = "A white, Navy-style peaked cap for the Commanding Officer. Wearer may suffer the heavy weight of responsibility upon their head."
-	icon_state = "co_peakedcap_white"
-
-/obj/item/clothing/head/marine/peaked/captain/black
-	name = "commanding officer's dress black peaked cap"
-	desc = "A black, Navy-style peaked cap for the Commanding Officer. Wearer may suffer the heavy weight of responsibility upon their head."
-	icon_state = "co_peakedcap_black"
-
 /obj/item/clothing/head/beret/marine/chiefofficer
 	name = "chief officer beret"
 	desc = "A beret with the lieutenant-commander insignia emblazoned on it. It emits a dark aura and may corrupt the soul."
@@ -605,6 +558,59 @@
 	item_icons = list(
 		WEAR_HEAD = 'icons/mob/humans/onmob/head_1.dmi'
 	)
+
+//child of cmcap to give them inventory slots in the beret
+
+/obj/item/clothing/head/cmcap/pmc
+	name = "\improper PMC beret"
+	desc = "The pinnacle of fashion for any aspiring mercenary leader. Designed to protect the head from light impacts."
+	icon = 'icons/obj/items/clothing/cm_hats.dmi'
+	icon_state = "officer_hat"
+	item_icons = list(
+		WEAR_HEAD = 'icons/mob/humans/onmob/head_1.dmi'
+	)
+
+/obj/item/clothing/head/cmcap/pmc/fieldleader
+	name = "\improper PMC field officer beret"
+	icon_state = "field_officer_hat"
+
+//==========================//PEAKED CAPS\\=============================\\
+//=======================================================================\\
+
+/obj/item/clothing/head/marine/peaked
+	name = "marine peaked cap"
+	desc = "A peaked cap. Wearer may suffer the heavy weight of responsibility upon their head and shoulders."
+	icon = 'icons/obj/items/clothing/cm_hats.dmi'
+	icon_state = "marine_formal"
+	item_icons = list(
+		WEAR_HEAD = 'icons/mob/humans/onmob/head_1.dmi'
+	)
+
+/obj/item/clothing/head/marine/peaked/service
+	name = "marine service peaked cap"
+	desc = "A peaked cap. Wearer may suffer the heavy weight of responsibility upon their head and shoulders."
+	icon_state = "marine_service"
+
+/obj/item/clothing/head/marine/peaked/captain
+	name = "marine commanding officer peaked cap"
+	desc = "A peaked cap with the commanding officer's insignia emblazoned on it. Wearer may suffer the heavy weight of responsibility upon their head and shoulders."
+	icon_state = "copeaked"
+	black_market_value = 30
+
+/obj/item/clothing/head/marine/peaked/cmo
+	name = "\improper Chief Medical Officer's Peaked Cap"
+	desc = "A peaked cap given to high-ranking civilian medical officers. Looks just a touch silly."
+	icon_state = "cmohat"
+
+/obj/item/clothing/head/marine/peaked/captain/white
+	name = "commanding officer's dress white peaked cap"
+	desc = "A white, Navy-style peaked cap for the Commanding Officer. Wearer may suffer the heavy weight of responsibility upon their head."
+	icon_state = "co_peakedcap_white"
+
+/obj/item/clothing/head/marine/peaked/captain/black
+	name = "commanding officer's dress black peaked cap"
+	desc = "A black, Navy-style peaked cap for the Commanding Officer. Wearer may suffer the heavy weight of responsibility upon their head."
+	icon_state = "co_peakedcap_black"
 
 //==========================//PROTECTIVE\\===============================\\
 //=======================================================================\\

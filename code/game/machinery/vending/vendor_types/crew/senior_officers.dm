@@ -247,7 +247,7 @@ GLOBAL_LIST_INIT(cm_vending_clothing_cmo, list(
 		list("Snow Scarf", 0, /obj/item/clothing/mask/tornscarf, MARINE_CAN_BUY_MASK, VENDOR_ITEM_MANDATORY),
 
 		list("HEADWEAR (CHOOSE 1)", 0, null, null, null),
-		list("Chief Medical Officer's Peaked Cap", 0, /obj/item/clothing/head/cmo, MARINE_CAN_BUY_HELMET, VENDOR_ITEM_RECOMMENDED),
+		list("Chief Medical Officer's Peaked Cap", 0, /obj/item/clothing/head/marine/peaked/cmo, MARINE_CAN_BUY_HELMET, VENDOR_ITEM_RECOMMENDED),
 		list("Surgical Cap, Orange", 0, /obj/item/clothing/head/surgery/orange, MARINE_CAN_BUY_HELMET, VENDOR_ITEM_REGULAR),
 		list("Surgical Cap, Blue", 0, /obj/item/clothing/head/surgery/blue, MARINE_CAN_BUY_HELMET, VENDOR_ITEM_REGULAR),
 		list("Surgical Cap, Purple", 0, /obj/item/clothing/head/surgery/purple, MARINE_CAN_BUY_HELMET, VENDOR_ITEM_REGULAR),
