@@ -1079,8 +1079,16 @@ GLOBAL_LIST_EMPTY_TYPED(radio_packs, /obj/item/storage/backpack/marine/satchel/r
 /obj/item/storage/backpack/commando
 	name = "commando bag"
 	desc = "A heavy-duty bag carried by Weyland-Yutani commandos."
-	icon_state = "commandopack"
+	icon_state = "commando_backpack"
 	worn_accessible = TRUE
+
+/obj/item/storage/backpack/pmc/backpack/commando/leader
+	icon_state = "commando_leader_backpack"
+
+/obj/item/storage/backpack/pmc/backpack/commando/apesuit
+	name = "Dog Catcher bag"
+	desc = "A heavy-duty bag carried by Weyland-Yutani Dog Catchers."
+	icon_state = "apesuit_pack"
 
 /obj/item/storage/backpack/mcommander
 	name = "marine commanding officer backpack"
