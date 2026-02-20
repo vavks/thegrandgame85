@@ -1076,26 +1076,6 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	built_in_visors = list(new /obj/item/device/helmet_visor/medical/advanced/rmc)
 	start_down_visor_type = /obj/item/device/helmet_visor/medical/advanced/rmc
 
-/obj/item/clothing/head/helmet/marine/veteran/pmc/commando
-	name = "\improper M5X helmet"
-	desc = "A fully enclosed, armored helmet made to complete the M5X exoskeleton armor."
-	icon_state = "commando_helmet"
-	item_state = "commando_helmet"
-	unacidable = 1
-	flags_armor_protection = BODY_FLAG_HEAD|BODY_FLAG_FACE|BODY_FLAG_EYES
-	armor_melee = CLOTHING_ARMOR_VERYHIGH
-	armor_bullet = CLOTHING_ARMOR_ULTRAHIGH
-	armor_laser = CLOTHING_ARMOR_MEDIUMLOW
-	armor_energy = CLOTHING_ARMOR_MEDIUMLOW
-	armor_bomb = CLOTHING_ARMOR_ULTRAHIGH
-	armor_bio = CLOTHING_ARMOR_HIGH
-	armor_rad = CLOTHING_ARMOR_HIGH
-	armor_internaldamage = CLOTHING_ARMOR_HIGH
-	flags_inventory = COVEREYES|COVERMOUTH|BLOCKSHARPOBJ|BLOCKGASEFFECT|FULL_DECAP_PROTECTION
-	flags_inv_hide = HIDEEARS|HIDEEYES|HIDEFACE|HIDEMASK|HIDEALLHAIR
-	flags_marine_helmet = HELMET_DAMAGE_OVERLAY
-	unacidable = TRUE
-
 /obj/item/clothing/head/helmet/marine/veteran/pmc/corporate
 	name = "\improper WY corporate security helmet"
 	desc = "A basic skull-helm worn by corporate security assets, graded to protect your head from an unruly scientist armed with a crowbar."
@@ -1115,6 +1095,37 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	desc = "A basic skull-helm worn by corporate security assets. This variant is worn by low-level guards that have too much brainmatter to fit into the old one. Or so they say."
 	icon_state = "lead_helmet"
 	item_state = "lead_helmet"
+
+//=============================//WY COMMANDOS\\==================================\\
+//=======================================================================\\
+
+/obj/item/clothing/head/helmet/marine/veteran/pmc/commando
+	name = "\improper W-Y Mk17 Commando helmet"
+	desc = "A fully enclosed, armored helmet made to complete the M5X exoskeleton armor."
+	icon_state = "commando_helmet"
+	item_state = "commando_helmet"
+	unacidable = 1
+	flags_armor_protection = BODY_FLAG_HEAD|BODY_FLAG_FACE|BODY_FLAG_EYES
+	armor_melee = CLOTHING_ARMOR_VERYHIGH
+	armor_bullet = CLOTHING_ARMOR_ULTRAHIGH
+	armor_laser = CLOTHING_ARMOR_MEDIUMLOW
+	armor_energy = CLOTHING_ARMOR_MEDIUMLOW
+	armor_bomb = CLOTHING_ARMOR_ULTRAHIGH
+	armor_bio = CLOTHING_ARMOR_HIGH
+	armor_rad = CLOTHING_ARMOR_HIGH
+	armor_internaldamage = CLOTHING_ARMOR_HIGH
+	flags_inventory = COVEREYES|COVERMOUTH|BLOCKSHARPOBJ|BLOCKGASEFFECT|FULL_DECAP_PROTECTION
+	flags_inv_hide = HIDEEARS|HIDEEYES|HIDEFACE|HIDEMASK|HIDEALLHAIR
+	flags_marine_helmet = HELMET_DAMAGE_OVERLAY
+	unacidable = TRUE
+
+/obj/item/clothing/head/helmet/marine/veteran/pmc/commando/sg
+	icon_state = "commando_helmet_sg"
+
+/obj/item/clothing/head/helmet/marine/veteran/pmc/commando/leader
+	name = "\improper W-Y Mk17 Commando Leader helmet"
+	desc = "A standard enclosed helmet utilized by Weyland-Yutani Commandos. This one is worn by a high ranking corporate officer."
+	icon_state = "commando_helmet_leader"
 
 //FIORINA / UA RIOT CONTROL HELMET//
 
