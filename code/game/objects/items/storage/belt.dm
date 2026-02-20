@@ -277,8 +277,8 @@
 /obj/item/storage/belt/medical/upp
 	name = "\improper Type 41 pattern medical storage rig"
 	desc = "The Type 41 is the standard load-bearing equipment of UPP military. It consists of a modular belt with various clips. This version is a less common configuration, designed to transport medical supplies and pistol ammunition. \nRight click its sprite and click \"toggle belt mode\" to take pills out of bottles by simply clicking them."
-	icon_state = "medicalbelt_upp"
-	item_state = "upp_belt"
+	icon_state = "upp_medicalbelt"
+	item_state = "upp_medicalbelt"
 
 /obj/item/storage/belt/medical/upp/full/fill_preset_inventory()
 	new /obj/item/storage/pill_bottle/bicaridine(src)
@@ -1827,6 +1827,26 @@
 	handle_item_insertion(new /obj/item/weapon/gun/revolver/upp/shrapnel())
 	for(var/total_storage_slots in 1 to storage_slots - 1)
 		new /obj/item/ammo_magazine/revolver/upp/shrapnel(src)
+
+/obj/item/storage/belt/gun/type47/sof
+	name = "\improper Type 47-S pistol holster rig"
+	icon_state = "korovin_black_holster"
+	item_state = "upp_belt"
+
+/obj/item/storage/belt/gun/type47/sof/t73/fill_preset_inventory()
+	handle_item_insertion(new /obj/item/weapon/gun/pistol/t73())
+	for(var/i = 1 to storage_slots - 1)
+		new /obj/item/ammo_magazine/pistol/t73(src)
+
+/obj/item/storage/belt/gun/type47/sof/t73/leader/fill_preset_inventory()
+	handle_item_insertion(new /obj/item/weapon/gun/pistol/t73/leader())
+	for(var/i = 1 to storage_slots - 1)
+		new /obj/item/ammo_magazine/pistol/t73_impact(src)
+
+/obj/item/storage/belt/gun/type47/sof/revolver/upp/fill_preset_inventory()
+	handle_item_insertion(new /obj/item/weapon/gun/revolver/upp())
+	for(var/i = 1 to storage_slots - 1)
+		new /obj/item/ammo_magazine/revolver/upp(src)
 
 //Crazy Ivan's belt reskin
 /obj/item/storage/belt/gun/type47/ivan

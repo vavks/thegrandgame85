@@ -53,66 +53,6 @@
 /obj/item/clothing/head/beanie/tan
 	icon_state = "beanietan"
 
-/obj/item/clothing/head/beret/cm
-	name = "\improper Beret"
-	desc = "A hat typically worn by the French. Occasionally they find their way into the hands of people with nothing better to spend their money on."
-	icon = 'icons/obj/items/clothing/cm_hats.dmi'
-	icon_state = "beret"
-	item_icons = list(
-		WEAR_HEAD = 'icons/mob/humans/onmob/head_1.dmi'
-	)
-
-/obj/item/clothing/head/beret/cm/Initialize(mapload, ...)
-	. = ..()
-	select_gamemode_skin(/obj/item/clothing/head/beret/cm)
-
-/obj/item/clothing/head/beret/cm/tan
-	icon_state = "berettan"
-
-/obj/item/clothing/head/beret/cm/tan/Initialize(mapload, ...)
-	. = ..()
-	select_gamemode_skin(/obj/item/clothing/head/beret/cm/tan)
-
-/obj/item/clothing/head/beret/cm/red
-	icon_state = "beretred"
-
-/obj/item/clothing/head/beret/cm/white
-	icon_state = "s_beret"
-
-/obj/item/clothing/head/beret/cm/black
-	icon_state = "beret_black"
-
-/obj/item/clothing/head/beret/cm/green
-	icon_state = "beret_green"
-
-/obj/item/clothing/head/beret/cm/alpha
-	icon_state = "beret_alpha"
-
-/obj/item/clothing/head/beret/cm/bravo
-	icon_state = "beret_bravo"
-
-/obj/item/clothing/head/beret/cm/charlie
-	icon_state = "beret_charlie"
-
-/obj/item/clothing/head/beret/cm/delta
-	icon_state = "beret_delta"
-
-/obj/item/clothing/head/beret/cm/echo
-	icon_state = "beret_echo"
-
-/obj/item/clothing/head/beret/cm/foxtrot
-	icon_state = "beret_foxtrot"
-
-/obj/item/clothing/head/beret/cm/intel
-	icon_state = "beret_intel"
-
-/obj/item/clothing/head/beret/cm/white/civilian
-	name = "White Beret"
-	icon_state = "s_beret"
-
-/obj/item/clothing/head/beret/cm/black/civilian
-	name = "Black Beret"
-	icon_state = "beret_black"
 
 
 /obj/item/clothing/head/headband
@@ -206,6 +146,9 @@
 	item_icons = list(
 		WEAR_HEAD = 'icons/mob/humans/onmob/head_1.dmi'
 	)
+
+//=============================//CAPS\\=================================\\
+//=======================================================================\\
 
 /obj/item/clothing/head/cmcap
 	name = "utility cap"
@@ -459,6 +402,68 @@
 //============================//BERETS\\=================================\\
 //=======================================================================\\
 //Berets DO NOT have armor, so they have their own category. PMC caps are helmets, so they're in helmets.dm.
+
+/obj/item/clothing/head/beret/cm
+	name = "\improper Beret"
+	desc = "A hat typically worn by the French. Occasionally they find their way into the hands of people with nothing better to spend their money on."
+	icon = 'icons/obj/items/clothing/cm_hats.dmi'
+	icon_state = "beret"
+	item_icons = list(
+		WEAR_HEAD = 'icons/mob/humans/onmob/head_1.dmi'
+	)
+
+/obj/item/clothing/head/beret/cm/Initialize(mapload, ...)
+	. = ..()
+	select_gamemode_skin(/obj/item/clothing/head/beret/cm)
+
+/obj/item/clothing/head/beret/cm/tan
+	icon_state = "berettan"
+
+/obj/item/clothing/head/beret/cm/tan/Initialize(mapload, ...)
+	. = ..()
+	select_gamemode_skin(/obj/item/clothing/head/beret/cm/tan)
+
+/obj/item/clothing/head/beret/cm/red
+	icon_state = "beretred"
+
+/obj/item/clothing/head/beret/cm/white
+	icon_state = "s_beret"
+
+/obj/item/clothing/head/beret/cm/black
+	icon_state = "beret_black"
+
+/obj/item/clothing/head/beret/cm/green
+	icon_state = "beret_green"
+
+/obj/item/clothing/head/beret/cm/alpha
+	icon_state = "beret_alpha"
+
+/obj/item/clothing/head/beret/cm/bravo
+	icon_state = "beret_bravo"
+
+/obj/item/clothing/head/beret/cm/charlie
+	icon_state = "beret_charlie"
+
+/obj/item/clothing/head/beret/cm/delta
+	icon_state = "beret_delta"
+
+/obj/item/clothing/head/beret/cm/echo
+	icon_state = "beret_echo"
+
+/obj/item/clothing/head/beret/cm/foxtrot
+	icon_state = "beret_foxtrot"
+
+/obj/item/clothing/head/beret/cm/intel
+	icon_state = "beret_intel"
+
+/obj/item/clothing/head/beret/cm/white/civilian
+	name = "White Beret"
+	icon_state = "s_beret"
+
+/obj/item/clothing/head/beret/cm/black/civilian
+	name = "Black Beret"
+	icon_state = "beret_black"
+
 /obj/item/clothing/head/beret/marine
 	name = "marine officer beret"
 	desc = "A beret with the USCM insignia emblazoned on it. It radiates respect and authority."
