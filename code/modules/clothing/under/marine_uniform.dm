@@ -462,9 +462,12 @@
 /obj/item/clothing/under/marine/veteran/pmc/commando
 	name = "\improper PMC commando uniform"
 	desc = "An armored uniform worn by Weyland-Yutani elite commandos. It is well protected while remaining light and comfortable."
-	icon_state = "commando_jumpsuit"
-	worn_state = "commando_jumpsuit"
+	icon_state = "ape_jumpsuit"
+	worn_state = "ape_jumpsuit"
+	contained_sprite = TRUE
+	item_state_slots = null
 	flags_inventory = BLOCKGASEFFECT
+	icon = 'icons/mob/humans/onmob/contained/weyland.dmi'
 
 /obj/item/clothing/under/marine/veteran/pmc/corporate
 	name = "\improper WY corporate security uniform"
