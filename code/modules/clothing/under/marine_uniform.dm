@@ -1121,9 +1121,11 @@
 	worn_state = "rmc_uniform"
 	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE|UNIFORM_JACKET_REMOVABLE
 
-/obj/item/clothing/under/marine/veteran/royal_marine/Initialize() //initalizes the item because if you don't, it doesn't set the flags_jumpsuit for ??? reason
+/obj/item/clothing/under/marine/veteran/royal_marine/Initialize()
 	. = ..()
 	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE|UNIFORM_JACKET_REMOVABLE
+//initalizes the item because if you don't, it doesn't set the flags_jumpsuit for ??? reason
+//downside is that all subsequent children have the same flags for whatever reason. doesnt break anything, so it's probably fine.
 
 /obj/item/clothing/under/marine/veteran/royal_marine/tl
 	name = "Royal Marines team leader uniform"
