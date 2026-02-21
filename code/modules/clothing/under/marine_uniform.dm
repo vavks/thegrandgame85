@@ -1108,7 +1108,7 @@
 	armor_bio = CLOTHING_ARMOR_MEDIUMHIGH
 	unacidable = TRUE
 
-//=====================THREE WORLDS EMPIRE========================\\
+//=====================THREE WORLD EMPIRE========================\\
 
 /obj/item/clothing/under/marine/veteran/royal_marine
 	name = "Royal Marines uniform"
