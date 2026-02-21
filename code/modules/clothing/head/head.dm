@@ -862,7 +862,7 @@
 	desc = "A green beret worn by the TWE's Royal Marines Commando. Wear it with pride."
 	icon = 'icons/obj/items/clothing/hats/TWE.dmi'
 	item_icons = list(
-		WEAR_HEAD = 'icons/mob/humans/onmob/clothing/head/hats_by_faction/TWE.dmi'
+		WEAR_HEAD = 'icons/mob/humans/onmob/clothing/hats/TWE.dmi'
 	)
 	icon_state = "rmc_beret"
 	item_state = "rmc_beret"
