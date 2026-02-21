@@ -880,12 +880,12 @@
 	icon_state = "rmc_beret_tl"
 	item_state = "rmc_beret_tl"
 
-/obj/item/clothing/head/cmcap/royal_marine/isaf
-	name = "ISAF beret"
-	icon_state = "beret_isaf"
-	item_state = "beret_isaf"
+/obj/item/clothing/head/cmcap/royal_marine/iasf
+	name = "IASF beret"
+	icon_state = "beret_iasf"
+	item_state = "beret_iasf"
 
-/obj/item/clothing/head/cmcap/royal_marine/isaf/team_leader
-	name = "ISAF team leader beret"
-	icon_state = "beret_isaf_tl"
-	item_state = "beret_isaf_tl"
+/obj/item/clothing/head/cmcap/royal_marine/iasf/team_leader
+	name = "IASF team leader beret"
+	icon_state = "beret_iasf_tl"
+	item_state = "beret_iasf_tl"
