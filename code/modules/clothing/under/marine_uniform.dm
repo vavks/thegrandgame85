@@ -1108,29 +1108,43 @@
 	armor_bio = CLOTHING_ARMOR_MEDIUMHIGH
 	unacidable = TRUE
 
-//=ROYAL MARINES=\\
+//=====================THREE WORLDS EMPIRE========================\\
 
 /obj/item/clothing/under/marine/veteran/royal_marine
 	name = "marine commando uniform"
-	desc = "Subdued-camouflage field uniform of the royal marine commandos. Has venlar armor inserts at critical areas to protect from blades and ballistics."
+	desc = "Subdued-camouflage field uniform of the Royal Marine Commandos. Has venlar armor inserts at critical areas to protect from blades and ballistics."
+	icon = 'icons/obj/items/clothing/uniforms/TWE.dmi'
+	item_icons = list(
+		WEAR_BODY = 'icons/mob/humans/onmob/clothing/uniforms/TWE.dmi',
+	)
 	icon_state = "rmc_uniform"
 	worn_state = "rmc_uniform"
 	flags_atom = NO_NAME_OVERRIDE|NO_SNOW_TYPE
 	contained_sprite = TRUE
-	icon = 'icons/mob/humans/onmob/contained/royal_marines_commando.dmi'
+
+/obj/item/clothing/under/marine/veteran/royal_marine/tl
+	icon_state = "rmc_uniform_teaml"
+	worn_state = "rmc_uniform_teaml"
 
 /obj/item/clothing/under/marine/veteran/royal_marine/lt
 	name = "marine commando officer field uniform"
-	desc = "Subdued-camouflage field-officer uniform of the royal marine commandos. Has venlar armor inserts at critical areas to protect from blades and ballistics."
+	desc = "Subdued-camouflage field-officer uniform of the Royal Marine Commandos. Has venlar armor inserts at critical areas to protect from blades and ballistics."
 	icon_state = "rmc_uniform_lt"
 	worn_state = "rmc_uniform_lt"
 
 /obj/item/clothing/under/marine/veteran/royal_marine/lt/service
 	name = "marine commando officers service uniform"
-	desc = "The officers uniform of the royal marine commandos. Commonly seen worn by high-ranking officers who don't typically take to the field."
+	desc = "The officers uniform of the Royal Marine Commandos. Commonly seen worn by high-ranking officers who don't typically take to the field."
 	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE
 	icon_state = "rmc_service_uniform"
 	worn_state = "rmc_service_uniform"
+
+/obj/item/clothing/under/marine/veteran/royal_marine/lt/isaf
+	name = "IASF No.8 combat uniform"
+	desc = "Standard issue No.8 Pattern BDU used by the Imperial Armed Space Force. Identical in cut and protection to the Royal Marine Commando variant, but issued in woodland camouflage. Lightweight Kevlar mesh offers limited protection against shrapnel and close-quarters threats."
+	icon_state = "rmc_uniform_lt"
+	worn_state = "rmc_uniform_lt"
+	flags_atom = FPRINT|NO_NAME_OVERRIDE
 
 /obj/item/clothing/under/marine/pve_mopp
 	name = "\improper M2 MOPP suit"
