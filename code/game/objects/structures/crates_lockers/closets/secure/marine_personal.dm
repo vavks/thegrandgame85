@@ -175,7 +175,7 @@
 	new /obj/item/device/radio/headset/almayer/marine/solardevils/rmc(src)
 	new /obj/item/clothing/shoes/marine/rmc/knife(src)
 
-/obj/structure/closet/secure_closet/marine_personal/rmc/team_lead/spawn_gear()
+/obj/structure/closet/secure_closet/marine_personal/rmc/team_lead/spawn_gear() //i forgot what paygrade zhey are. please make all the thingies when available
 	new /obj/item/clothing/head/cmcap/royal_marine/team_leader(src)
 	new /obj/item/clothing/under/marine/veteran/royal_marine(src)
 	new /obj/item/device/radio/headset/almayer/marine/solardevils/rmc(src)
