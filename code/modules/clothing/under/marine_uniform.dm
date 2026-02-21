@@ -1135,8 +1135,8 @@
 	name = "marine commando officers service uniform"
 	desc = "The officers uniform of the Royal Marine Commandos. Commonly seen worn by high-ranking officers who don't typically take to the field."
 	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE
-	icon_state = "rmc_service_uniform"
-	worn_state = "rmc_service_uniform"
+	icon_state = "rmc_uniform_service"
+	worn_state = "rmc_uniform_service"
 
 /obj/item/clothing/under/marine/veteran/royal_marine/lt/isaf
 	name = "IASF No.8 combat uniform"
