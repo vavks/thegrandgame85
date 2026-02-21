@@ -878,4 +878,4 @@
 	name = "Royal Marines team leader beret"
 	desc = "A green beret worn by the TWE's Royal Marines Commando team leaders and officers."
 	icon_state = "rmc_beret_tl"
-	worn_state = "rmc_beret_tl"
+	item_state = "rmc_beret_tl"
