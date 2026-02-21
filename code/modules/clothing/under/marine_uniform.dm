@@ -1121,7 +1121,7 @@
 	worn_state = "rmc_uniform"
 	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE|UNIFORM_JACKET_REMOVABLE
 
-/obj/item/clothing/under/marine/veteran/royal_marine/Initialize()
+/obj/item/clothing/under/marine/veteran/royal_marine/Initialize() //initalizes the item because if you don't, it doesn't set the flags_jumpsuit for ??? reason
 	. = ..()
 	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE|UNIFORM_JACKET_REMOVABLE
 
