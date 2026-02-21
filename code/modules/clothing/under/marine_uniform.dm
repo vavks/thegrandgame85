@@ -1131,6 +1131,7 @@
 	desc = "Subdued-camouflage field-officer uniform of the Royal Marines Commando. Has venlar armor inserts at critical areas to protect from blades and ballistics."
 	icon_state = "rmc_uniform_lt"
 	worn_state = "rmc_uniform_lt"
+	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE
 
 /obj/item/clothing/under/marine/veteran/royal_marine/lt/service
 	name = "Royal Marines officer service uniform"
@@ -1139,7 +1140,7 @@
 	icon_state = "rmc_uniform_service"
 	worn_state = "rmc_uniform_service"
 
-/obj/item/clothing/under/marine/veteran/royal_marine/lt/isaf
+/obj/item/clothing/under/marine/veteran/royal_marine/isaf
 	name = "IASF No.8 combat uniform"
 	desc = "Standard issue No.8 Pattern BDU used by the Imperial Armed Space Force. Identical in cut and protection to the Royal Marine Commando variant, but issued in woodland camouflage. Lightweight Kevlar mesh offers limited protection against shrapnel and close-quarters threats."
 	icon_state = "isaf_uniform"
