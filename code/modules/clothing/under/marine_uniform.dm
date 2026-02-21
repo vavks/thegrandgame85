@@ -1119,7 +1119,7 @@
 	)
 	icon_state = "rmc_uniform"
 	worn_state = "rmc_uniform"
-	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE
+	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE|UNIFORM_JACKET_REMOVABLE
 
 /obj/item/clothing/under/marine/veteran/royal_marine/tl
 	name = "Royal Marines team leader uniform"
@@ -1144,7 +1144,7 @@
 	desc = "Standard issue No.8 Pattern BDU used by the Imperial Armed Space Force. Identical in cut and protection to the Royal Marine Commando variant, but issued in woodland camouflage. Lightweight Kevlar mesh offers limited protection against shrapnel and close-quarters threats."
 	icon_state = "isaf_uniform"
 	worn_state = "isaf_uniform"
-	flags_atom = FPRINT|NO_NAME_OVERRIDE
+	flags_atom = FPRINT
 
 /obj/item/clothing/under/marine/pve_mopp
 	name = "\improper M2 MOPP suit"
