@@ -842,7 +842,7 @@
 //=ROYAL MARINES=\\
 
 /obj/item/clothing/head/beanie/royal_marine
-	name = "royal marine beanie"
+	name = "Royal Marine beanie"
 	desc = "A standard military beanie."
 	icon_state = "rmc_beanie"
 	item_state = "rmc_beanie"
@@ -852,13 +852,13 @@
 	)
 
 /obj/item/clothing/head/beanie/royal_marine/turban
-	name = "royal marine turban"
-	desc = "A standard military turban found in the royal marines. Considered a rare item, these kind of turbans are prized by collectors in the UA."
+	name = "Royal Marine turban"
+	desc = "A standard military turban found in the Royal Marines. Considered a rare item, these kind of turbans are prized by collectors in the UA."
 	icon_state = "rmc_turban"
 	item_state = "rmc_turban"
 
 /obj/item/clothing/head/cmcap/royal_marine
-	name = "royal marine beret"
+	name = "Royal Marine beret"
 	desc = "A green beret worn by the TWE's Royal Marines Commando. Wear it with pride."
 	icon = 'icons/obj/items/clothing/hats/TWE.dmi'
 	item_icons = list(
@@ -879,3 +879,13 @@
 	desc = "A green beret worn by the TWE's Royal Marines Commando team leaders and officers."
 	icon_state = "rmc_beret_tl"
 	item_state = "rmc_beret_tl"
+
+/obj/item/clothing/head/cmcap/royal_marine/isaf
+	name = "ISAF beret"
+	icon_state = "beret_isaf"
+	item_state = "beret_isaf"
+
+/obj/item/clothing/head/cmcap/royal_marine/isaf/team_leader
+	name = "ISAF team leader beret"
+	icon_state = "beret_isaf_tl"
+	item_state = "beret_isaf_tl"
