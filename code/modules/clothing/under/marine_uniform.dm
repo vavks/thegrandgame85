@@ -1121,6 +1121,10 @@
 	worn_state = "rmc_uniform"
 	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE|UNIFORM_JACKET_REMOVABLE
 
+/obj/item/clothing/under/marine/veteran/royal_marine/Initialize()
+	. = ..()
+	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE|UNIFORM_JACKET_REMOVABLE
+
 /obj/item/clothing/under/marine/veteran/royal_marine/tl
 	name = "Royal Marines team leader uniform"
 	icon_state = "rmc_uniform_teaml"
