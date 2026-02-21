@@ -446,6 +446,10 @@
 /obj/item/clothing/under/marine/veteran/pmc
 	name = "\improper PMC fatigues"
 	desc = "A white set of fatigues, designed for private security operators. The symbol of the Weyland-Yutani corporation is emblazed on the suit."
+	icon = 'icons/obj/items/clothing/uniforms/WY.dmi'
+	item_icons = list(
+		WEAR_BODY = 'icons/mob/humans/onmob/clothing/uniforms/WY.dmi',
+	)
 	icon_state = "pmc_jumpsuit"
 	worn_state = "pmc_jumpsuit"
 	min_cold_protection_temperature = ICE_PLANET_MIN_COLD_PROT
@@ -457,34 +461,27 @@
 	desc = "A white set of fatigues, designed for private security operators. The symbol of the Weyland-Yutani corporation is emblazed on the suit. This particular suit looks like it belongs to a high-ranking officer."
 	icon_state = "officer_jumpsuit"
 	worn_state = "officer_jumpsuit"
-	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE
 
-/obj/item/clothing/under/marine/veteran/pmc/commando
+/obj/item/clothing/under/marine/veteran/pmc/leader/commando
 	name = "\improper PMC commando uniform"
 	desc = "An armored uniform worn by Weyland-Yutani elite commandos. It is well protected while remaining light and comfortable."
-	icon_state = "ape_jumpsuit"
-	worn_state = "ape_jumpsuit"
-	contained_sprite = TRUE
-	item_state_slots = null
-	flags_inventory = BLOCKGASEFFECT
-	icon = 'icons/mob/humans/onmob/contained/weyland.dmi'
+
+/obj/item/clothing/under/marine/veteran/pmc/leader/commando/leader
+	name = "\improper W-Y Commando leader fatigues"
+	icon_state = "commando_leader"
+	worn_state = "commando_leader"
+	flags_jumpsuit = null
 
 /obj/item/clothing/under/marine/veteran/pmc/corporate
 	name = "\improper WY corporate security uniform"
 	desc = "An armored uniform worn by Weyland-Yutani corporate security members. This variant is commonly worn by what are known as 'goons'."
-	icon = 'icons/mob/humans/onmob/contained/wy_goons.dmi'
-	icon_state = "uniform"
-	item_state = "uniform"
-	worn_state = "uniform"
-	contained_sprite = TRUE
-	item_state_slots = null
-	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE
+	icon_state = "sec_uniform"
+	worn_state = "sec_uniform"
 
 /obj/item/clothing/under/marine/veteran/pmc/corporate/lead
 	desc = "An armored uniform worn by Weyland-Yutani corporate security members. This variant is commonly worn by the lead of the 'goonsquad', as they are colloquially known."
-	icon_state = "lead_uniform"
-	item_state = "lead_uniform"
-	worn_state = "lead_uniform"
+	icon_state = "sec_lead_uniform"
+	worn_state = "sec_lead_uniform"
 
 //=========================//UPP\\================================\\
 
