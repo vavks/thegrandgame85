@@ -1112,7 +1112,7 @@
 
 /obj/item/clothing/under/marine/veteran/royal_marine
 	name = "Royal Marines uniform"
-	desc = "Subdued-camouflage field uniform of the Royal Marine Commandos. Has venlar armor inserts at critical areas to protect from blades and ballistics."
+	desc = "Subdued-camouflage field uniform of the Royal Marines Commando. Has venlar armor inserts at critical areas to protect from blades and ballistics."
 	icon = 'icons/obj/items/clothing/uniforms/TWE.dmi'
 	item_icons = list(
 		WEAR_BODY = 'icons/mob/humans/onmob/clothing/uniforms/TWE.dmi',
@@ -1128,13 +1128,13 @@
 
 /obj/item/clothing/under/marine/veteran/royal_marine/lt
 	name = "Royal Marines officer field uniform"
-	desc = "Subdued-camouflage field-officer uniform of the Royal Marine Commandos. Has venlar armor inserts at critical areas to protect from blades and ballistics."
+	desc = "Subdued-camouflage field-officer uniform of the Royal Marines Commando. Has venlar armor inserts at critical areas to protect from blades and ballistics."
 	icon_state = "rmc_uniform_lt"
 	worn_state = "rmc_uniform_lt"
 
 /obj/item/clothing/under/marine/veteran/royal_marine/lt/service
-	name = "Royal Marines officers service uniform"
-	desc = "The officers uniform of the Royal Marine Commandos. Commonly seen worn by high-ranking officers who don't typically take to the field."
+	name = "Royal Marines officer service uniform"
+	desc = "The officers uniform of the Royal Marines Commando. Commonly seen worn by high-ranking officers who don't typically take to the field."
 	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE
 	icon_state = "rmc_uniform_service"
 	worn_state = "rmc_uniform_service"
