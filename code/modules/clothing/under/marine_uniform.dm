@@ -446,6 +446,10 @@
 /obj/item/clothing/under/marine/veteran/pmc
 	name = "\improper PMC fatigues"
 	desc = "A white set of fatigues, designed for private security operators. The symbol of the Weyland-Yutani corporation is emblazed on the suit."
+	icon = 'icons/obj/items/clothing/uniforms/WY.dmi'
+	item_icons = list(
+		WEAR_BODY = 'icons/mob/humans/onmob/clothing/uniforms/WY.dmi',
+	)
 	icon_state = "pmc_jumpsuit"
 	worn_state = "pmc_jumpsuit"
 	min_cold_protection_temperature = ICE_PLANET_MIN_COLD_PROT
@@ -457,34 +461,69 @@
 	desc = "A white set of fatigues, designed for private security operators. The symbol of the Weyland-Yutani corporation is emblazed on the suit. This particular suit looks like it belongs to a high-ranking officer."
 	icon_state = "officer_jumpsuit"
 	worn_state = "officer_jumpsuit"
+
+/obj/item/clothing/under/marine/veteran/pmc/leader/commando
+	name = "\improper PMC commando uniform"
+
+/obj/item/clothing/under/marine/veteran/pmc/leader/commando/leader
+	name = "\improper W-Y Commando leader fatigues"
+	icon_state = "commando_leader"
+	worn_state = "commando_leader"
+	flags_jumpsuit = null
+
+/obj/item/clothing/under/marine/veteran/pmc/engineer
+	name = "\improper PMC engineer fatigues"
+	desc = "A black and orange set of fatigues, designed for private security technicians. The symbol of the Weyland-Yutani corporation is emblazed on the suit."
+	icon_state = "engineer_jumpsuit"
+	worn_state = "engineer_jumpsuit"
 	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE
 
-/obj/item/clothing/under/marine/veteran/pmc/commando
-	name = "\improper PMC commando uniform"
+/obj/item/clothing/under/marine/veteran/pmc/guard
+	name = "\improper PMC guard fatigues"
+	desc = "A black and orange set of fatigues, designed for private security enforcer personnel. The symbol of the Weyland-Yutani corporation is emblazed on the suit."
+	icon_state = "guard_jumpsuit"
+	worn_state = "guard_jumpsuit"
+
+/obj/item/clothing/under/marine/veteran/pmc/apesuit
+	name = "\improper W-Y commando Apesuit uniform"
 	desc = "An armored uniform worn by Weyland-Yutani elite commandos. It is well protected while remaining light and comfortable."
 	icon_state = "ape_jumpsuit"
 	worn_state = "ape_jumpsuit"
-	contained_sprite = TRUE
-	item_state_slots = null
-	flags_inventory = BLOCKGASEFFECT
-	icon = 'icons/mob/humans/onmob/contained/weyland.dmi'
 
 /obj/item/clothing/under/marine/veteran/pmc/corporate
 	name = "\improper WY corporate security uniform"
 	desc = "An armored uniform worn by Weyland-Yutani corporate security members. This variant is commonly worn by what are known as 'goons'."
-	icon = 'icons/mob/humans/onmob/contained/wy_goons.dmi'
-	icon_state = "uniform"
-	item_state = "uniform"
-	worn_state = "uniform"
-	contained_sprite = TRUE
-	item_state_slots = null
-	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE
+	icon_state = "sec_uniform"
+	worn_state = "sec_uniform"
 
 /obj/item/clothing/under/marine/veteran/pmc/corporate/lead
 	desc = "An armored uniform worn by Weyland-Yutani corporate security members. This variant is commonly worn by the lead of the 'goonsquad', as they are colloquially known."
-	icon_state = "lead_uniform"
-	item_state = "lead_uniform"
-	worn_state = "lead_uniform"
+	icon_state = "sec_lead_uniform"
+	worn_state = "sec_lead_uniform"
+
+/obj/item/clothing/under/marine/veteran/pmc/corporate/kutjevo
+	desc = "An armored uniform worn by Weyland-Yutani corporate security members. This variant is more breathable for use in hot, dry environments."
+	icon_state = "sec_kutjevo_uniform"
+	item_state = "sec_kutjevo_uniform"
+	worn_state = "sec_kutjevo_uniform"
+
+/obj/item/clothing/under/marine/veteran/pmc/corporate/kutjevo/lead
+	desc = "An armored uniform worn by Weyland-Yutani corporate security members. This variant is more breathable for use in hot, dry environments and has gold armbands denoting the team leader."
+	icon_state = "sec_lead_kutjevo_uniform"
+	item_state = "sec_lead_kutjevo_uniform"
+	worn_state = "sec_lead_kutjevo_uniform"
+
+/obj/item/clothing/under/marine/veteran/pmc/corporate/hybrisa
+	desc = "An armored uniform worn by Weyland-Yutani corporate security members. This variant is commonly worn by what are known as 'goons'."
+	icon_state = "sec_hybrisa_uniform"
+	item_state = "sec_hybrisa_uniform"
+	worn_state = "sec_hybrisa_uniform"
+
+/obj/item/clothing/under/marine/veteran/pmc/corporate/hybrisa/lead
+	desc = "An armored uniform worn by Weyland-Yutani corporate security members. This variant is commonly worn by the lead of the 'goonsquad', as they are colloquially known."
+	icon_state = "sec_lead_hybrisa_uniform"
+	item_state = "sec_lead_hybrisa_uniform"
+	worn_state = "sec_lead_hybrisa_uniform"
 
 //=========================//UPP\\================================\\
 
@@ -1069,29 +1108,50 @@
 	armor_bio = CLOTHING_ARMOR_MEDIUMHIGH
 	unacidable = TRUE
 
-//=ROYAL MARINES=\\
+//=====================THREE WORLD EMPIRE========================\\
 
 /obj/item/clothing/under/marine/veteran/royal_marine
-	name = "marine commando uniform"
-	desc = "Subdued-camouflage field uniform of the royal marine commandos. Has venlar armor inserts at critical areas to protect from blades and ballistics."
+	name = "Royal Marine uniform"
+	desc = "Subdued-camouflage field uniform of the Royal Marines Commando. Has venlar armor inserts at critical areas to protect from blades and ballistics."
+	icon = 'icons/obj/items/clothing/uniforms/TWE.dmi'
+	item_icons = list(
+		WEAR_BODY = 'icons/mob/humans/onmob/clothing/uniforms/TWE.dmi',
+	)
 	icon_state = "rmc_uniform"
 	worn_state = "rmc_uniform"
-	flags_atom = NO_NAME_OVERRIDE|NO_SNOW_TYPE
-	contained_sprite = TRUE
-	icon = 'icons/mob/humans/onmob/contained/royal_marines_commando.dmi'
+	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE|UNIFORM_JACKET_REMOVABLE
+
+/obj/item/clothing/under/marine/veteran/royal_marine/Initialize()
+	. = ..()
+	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE|UNIFORM_JACKET_REMOVABLE
+//initalizes the item because if you don't, it doesn't set the flags_jumpsuit for ??? reason
+//downside is that all subsequent children have the same flags for whatever reason. doesnt break anything, so it's probably fine.
+
+/obj/item/clothing/under/marine/veteran/royal_marine/tl
+	name = "Royal Marine team leader uniform"
+	icon_state = "rmc_uniform_teaml"
+	worn_state = "rmc_uniform_teaml"
 
 /obj/item/clothing/under/marine/veteran/royal_marine/lt
-	name = "marine commando officer field uniform"
-	desc = "Subdued-camouflage field-officer uniform of the royal marine commandos. Has venlar armor inserts at critical areas to protect from blades and ballistics."
+	name = "Royal Marine officer field uniform"
+	desc = "Subdued-camouflage field-officer uniform of the Royal Marines Commando. Has venlar armor inserts at critical areas to protect from blades and ballistics."
 	icon_state = "rmc_uniform_lt"
 	worn_state = "rmc_uniform_lt"
+	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE
 
 /obj/item/clothing/under/marine/veteran/royal_marine/lt/service
-	name = "marine commando officers service uniform"
-	desc = "The officers uniform of the royal marine commandos. Commonly seen worn by high-ranking officers who don't typically take to the field."
+	name = "Royal Marine officer service uniform"
+	desc = "The officers uniform of the Royal Marines Commando. Commonly seen worn by high-ranking officers who don't typically take to the field."
 	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE
-	icon_state = "rmc_service_uniform"
-	worn_state = "rmc_service_uniform"
+	icon_state = "rmc_uniform_service"
+	worn_state = "rmc_uniform_service"
+
+/obj/item/clothing/under/marine/veteran/royal_marine/iasf
+	name = "IASF No.8 combat uniform"
+	desc = "Standard issue No.8 Pattern BDU used by the Imperial Armed Space Force. Identical in cut and protection to the Royal Marine Commando variant, but issued in woodland camouflage. Lightweight Kevlar mesh offers limited protection against shrapnel and close-quarters threats."
+	icon_state = "iasf_uniform"
+	worn_state = "iasf_uniform"
+	flags_atom = FPRINT
 
 /obj/item/clothing/under/marine/pve_mopp
 	name = "\improper M2 MOPP suit"

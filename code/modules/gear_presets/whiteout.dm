@@ -54,7 +54,7 @@
 	//head
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/veteran/pmc/commando, WEAR_HEAD)
 	//uniform
-	var/obj/item/clothing/under/marine/veteran/pmc/commando/M = new()
+	var/obj/item/clothing/under/marine/veteran/pmc/leader/commando/M = new()
 	var/obj/item/clothing/accessory/storage/webbing/W = new()
 	M.attach_accessory(new_human, W)
 	new_human.equip_to_slot_or_del(M, WEAR_BODY)
@@ -104,7 +104,7 @@
 	//head
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/veteran/pmc/commando, WEAR_HEAD)
 	//uniform
-	var/obj/item/clothing/under/marine/veteran/pmc/commando/M = new()
+	var/obj/item/clothing/under/marine/veteran/pmc/leader/commando/M = new()
 	var/obj/item/clothing/accessory/storage/webbing/W = new()
 	M.attach_accessory(new_human, W)
 	new_human.equip_to_slot_or_del(M, WEAR_BODY)
@@ -142,7 +142,7 @@
 	//head
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/veteran/pmc/commando, WEAR_HEAD)
 	//uniform
-	var/obj/item/clothing/under/marine/veteran/pmc/commando/M = new()
+	var/obj/item/clothing/under/marine/veteran/pmc/leader/commando/M = new()
 	var/obj/item/clothing/accessory/storage/webbing/W = new()
 	M.attach_accessory(new_human, W)
 	new_human.equip_to_slot_or_del(M, WEAR_BODY)
@@ -193,7 +193,7 @@
 	//head
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/veteran/pmc/commando, WEAR_HEAD)
 	//uniform
-	var/obj/item/clothing/under/marine/veteran/pmc/commando/M = new()
+	var/obj/item/clothing/under/marine/veteran/pmc/leader/commando/M = new()
 	var/obj/item/clothing/accessory/storage/webbing/W = new()
 	M.attach_accessory(new_human, W)
 	new_human.equip_to_slot_or_del(M, WEAR_BODY)
@@ -241,9 +241,9 @@
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/pmc/leader, WEAR_FACE)
 	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/distress/commando, WEAR_L_EAR)
 	//head
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/veteran/pmc/commando, WEAR_HEAD)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/veteran/pmc/enclosed/commando, WEAR_HEAD)
 	//uniform
-	var/obj/item/clothing/under/marine/veteran/pmc/commando/uniform = new()
+	var/obj/item/clothing/under/marine/veteran/pmc/leader/commando/uniform = new()
 	var/obj/item/clothing/accessory/storage/webbing/accessory = new()
 	uniform.attach_accessory(new_human, accessory)
 	new_human.equip_to_slot_or_del(uniform, WEAR_BODY)
@@ -290,7 +290,7 @@
 	//head
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/veteran/pmc/commando, WEAR_HEAD)
 	//uniform
-	var/obj/item/clothing/under/marine/veteran/pmc/commando/uniform = new()
+	var/obj/item/clothing/under/marine/veteran/pmc/leader/commando/uniform = new()
 	var/obj/item/clothing/accessory/storage/webbing/accessory = new()
 	uniform.attach_accessory(new_human, accessory)
 	new_human.equip_to_slot_or_del(uniform, WEAR_BODY)
@@ -324,7 +324,7 @@
 	//head
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/veteran/pmc/commando, WEAR_HEAD)
 	//uniform
-	var/obj/item/clothing/under/marine/veteran/pmc/commando/uniform = new()
+	var/obj/item/clothing/under/marine/veteran/pmc/leader/commando/uniform = new()
 	var/obj/item/clothing/accessory/storage/webbing/accessory = new()
 	uniform.attach_accessory(new_human, accessory)
 	new_human.equip_to_slot_or_del(uniform, WEAR_BODY)
@@ -372,7 +372,7 @@
 	//head
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/veteran/pmc/commando, WEAR_HEAD)
 	//uniform
-	var/obj/item/clothing/under/marine/veteran/pmc/commando/uniform = new()
+	var/obj/item/clothing/under/marine/veteran/pmc/leader/commando/uniform = new()
 	var/obj/item/clothing/accessory/storage/webbing/accessory = new()
 	uniform.attach_accessory(new_human, accessory)
 	new_human.equip_to_slot_or_del(uniform, WEAR_BODY)

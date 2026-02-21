@@ -101,7 +101,7 @@
 	new /obj/item/clothing/suit/storage/labcoat(src)
 	new /obj/item/clothing/mask/surgical(src)
 	new /obj/item/clothing/mask/breath(src)
-	new /obj/item/clothing/head/cmo(src)
+	new /obj/item/clothing/head/marine/peaked/cmo(src)
 	new /obj/item/reagent_container/hypospray/tricordrazine(src)
 	new /obj/item/device/flash(src)
 	new /obj/item/storage/pouch/medical(src)
