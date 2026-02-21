@@ -859,17 +859,23 @@
 
 /obj/item/clothing/head/cmcap/royal_marine
 	name = "royal marine beret"
-	desc = "A green beret worn by the TWE's Royal Marine Commandos. Wear it with pride."
+	desc = "A green beret worn by the TWE's Royal Marines Commando. Wear it with pride."
+	icon = 'icons/obj/items/clothing/hats/TWE.dmi'
+	item_icons = list(
+		WEAR_HEAD = 'icons/mob/humans/onmob/clothing/head/hats_by_faction/TWE.dmi'
+	)
 	icon_state = "rmc_beret"
 	item_state = "rmc_beret"
-	icon = 'icons/obj/items/clothing/cm_hats.dmi'
 	flags_marine_hat = HAT_GARB_OVERLAY
 	flags_atom = NO_NAME_OVERRIDE|NO_SNOW_TYPE
-	item_icons = list(
-		WEAR_HEAD = 'icons/mob/humans/onmob/head_1.dmi'
-	)
 	allowed_hat_items = list(
 		/obj/item/prop/helmetgarb/helmet_nvg = "icon_state",
 		/obj/item/prop/helmetgarb/helmet_nvg/cosmetic = "icon_state",
 		/obj/item/prop/helmetgarb/helmet_nvg/marsoc = "icon_state",
 	)
+
+/obj/item/clothing/head/cmcap/royal_marine/team_leader
+	name = "Royal Marines team leader beret"
+	desc = "A green beret worn by the TWE's Royal Marines Commando team leaders and officers."
+	icon_state = "rmc_beret_tl"
+	worn_state = "rmc_beret_tl"
