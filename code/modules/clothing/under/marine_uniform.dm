@@ -1111,7 +1111,7 @@
 //=====================THREE WORLD EMPIRE========================\\
 
 /obj/item/clothing/under/marine/veteran/royal_marine
-	name = "Royal Marines uniform"
+	name = "Royal Marine uniform"
 	desc = "Subdued-camouflage field uniform of the Royal Marines Commando. Has venlar armor inserts at critical areas to protect from blades and ballistics."
 	icon = 'icons/obj/items/clothing/uniforms/TWE.dmi'
 	item_icons = list(
@@ -1128,19 +1128,19 @@
 //downside is that all subsequent children have the same flags for whatever reason. doesnt break anything, so it's probably fine.
 
 /obj/item/clothing/under/marine/veteran/royal_marine/tl
-	name = "Royal Marines team leader uniform"
+	name = "Royal Marine team leader uniform"
 	icon_state = "rmc_uniform_teaml"
 	worn_state = "rmc_uniform_teaml"
 
 /obj/item/clothing/under/marine/veteran/royal_marine/lt
-	name = "Royal Marines officer field uniform"
+	name = "Royal Marine officer field uniform"
 	desc = "Subdued-camouflage field-officer uniform of the Royal Marines Commando. Has venlar armor inserts at critical areas to protect from blades and ballistics."
 	icon_state = "rmc_uniform_lt"
 	worn_state = "rmc_uniform_lt"
 	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE
 
 /obj/item/clothing/under/marine/veteran/royal_marine/lt/service
-	name = "Royal Marines officer service uniform"
+	name = "Royal Marine officer service uniform"
 	desc = "The officers uniform of the Royal Marines Commando. Commonly seen worn by high-ranking officers who don't typically take to the field."
 	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE
 	icon_state = "rmc_uniform_service"
