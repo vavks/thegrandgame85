@@ -1732,7 +1732,7 @@ GLOBAL_LIST_INIT(rebel_ua_pistols, list(
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/patch/royal_marines, WEAR_ACCESSORY)
 
 /datum/equipment_preset/proc/add_rmc_lt_uniform(mob/living/carbon/human/new_human)
-	var/obj/item/clothing/under/marine/veteran/royal_marine/lt/uniform = new()
+	var/obj/item/clothing/under/marine/twe/rmc/lt/uniform = new()
 	var/random_uniform = rand(1,10)
 	switch(random_uniform)
 		if(1)
