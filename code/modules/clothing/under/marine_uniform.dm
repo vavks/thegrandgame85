@@ -1122,23 +1122,25 @@
 	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE|UNIFORM_JACKET_REMOVABLE
 	flags_atom = NO_SNOW_TYPE|NO_NAME_OVERRIDE
 
+/obj/item/clothing/under/marine/twe/Initialize()
+	. = ..()
+	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE|UNIFORM_JACKET_REMOVABLE
+//initalizes the item because if you don't, it doesn't set the flags_jumpsuit for ??? reason
+//downside is that all subsequent children have the same flags for whatever reason. doesnt break anything, so it's probably fine.
+
 /obj/item/clothing/under/marine/twe/service
 	name = "IASF No.2 service uniform"
 	desc = "A formal No.2 service uniform worn by IASF officers. Features the same upper torso cut as the No.8 BDU, but paired with pressed khaki trousers. Issued for inspections, ceremonial duties, or when deployed in an advisory role."
 	icon_state = "iasf_uniform_service"
 	worn_state = "iasf_uniform_service"
 
-/obj/item/clothing/under/marine/veteran/royal_marine
+/obj/item/clothing/under/marine/twe/rmc
 	name = "Royal Marine uniform"
 	desc = "Subdued-camouflage field uniform of the Royal Marines Commando. Has venlar armor inserts at critical areas to protect from blades and ballistics."
 	icon_state = "rmc_uniform"
 	worn_state = "rmc_uniform"
 
-///obj/item/clothing/under/marine/veteran/royal_marine/Initialize()
-//	. = ..()
-//	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE|UNIFORM_JACKET_REMOVABLE
-//initalizes the item because if you don't, it doesn't set the flags_jumpsuit for ??? reason
-//downside is that all subsequent children have the same flags for whatever reason. doesnt break anything, so it's probably fine.
+
 
 /obj/item/clothing/under/marine/twe/rmc/tl
 	name = "Royal Marine team leader uniform"

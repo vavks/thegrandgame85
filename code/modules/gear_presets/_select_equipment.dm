@@ -1721,7 +1721,7 @@ GLOBAL_LIST_INIT(rebel_ua_pistols, list(
 
 
 /datum/equipment_preset/proc/add_rmc_uniform(mob/living/carbon/human/new_human)
-	var/obj/item/clothing/under/marine/veteran/royal_marine/uniform = new()
+	var/obj/item/clothing/under/marine/twe/rmc/uniform = new()
 	var/random_uniform = rand(1,10)
 	switch(random_uniform)
 		if(1)

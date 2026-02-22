@@ -554,7 +554,7 @@
 	listed_products = list(
 		list("STANDARD EQUIPMENT", -1, null, null, null),
 		list("Combat Boots", round(scale * 10), /obj/item/clothing/shoes/marine/rmc/knife, VENDOR_ITEM_REGULAR),
-		list("Royal Marine Uniform", round(scale * 10), /obj/item/clothing/under/marine/veteran/royal_marine, VENDOR_ITEM_REGULAR),
+		list("Royal Marine Uniform", round(scale * 10), /obj/item/clothing/under/marine/twe/rmc, VENDOR_ITEM_REGULAR),
 		list("Combat Gloves", round(scale * 10), /obj/item/clothing/gloves/marine, VENDOR_ITEM_REGULAR),
 		list("Mk16 Tactical Helmet", round(scale * 10), /obj/item/clothing/head/helmet/marine/veteran/pmc/gunner/rmc, VENDOR_ITEM_REGULAR),
 		list("Tactical Beanie", round(scale * 10), /obj/item/clothing/head/beanie/royal_marine, VENDOR_ITEM_REGULAR),
