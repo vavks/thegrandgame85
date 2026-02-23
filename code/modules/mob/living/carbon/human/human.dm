@@ -1695,13 +1695,13 @@
 				platoon = "3rd Bat. 'Solar Devils"
 		if(FACTION_UPP)
 			alert_type = /atom/movable/screen/text/screen_text/picture/starting/upp
-			platoon = "Red Dawn"
+			platoon = "95th NSPRS/2nd DRG"
 		if(FACTION_PMC)
 			alert_type = /atom/movable/screen/text/screen_text/picture/starting/wy
 			platoon = "Azure-15"
 		if(FACTION_TWE)
 			alert_type = /atom/movable/screen/text/screen_text/picture/starting/twe
-			platoon = "Gamma Troop"
+			platoon = "India Troop"
 	play_screen_text("<u>[SSmapping.configs[SHIP_MAP].map_name]<br></u>" + "[platoon]<br><br>" + human_manifest, alert_type)
 
 /mob/living/carbon/human/point_to_atom(atom/A, turf/T)
