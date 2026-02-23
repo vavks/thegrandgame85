@@ -19,7 +19,7 @@
 		uniform.sensor_faction = FACTION_IASF
 	return ..()
 
-/datum/equipment_preset/royal_marine/standard
+/datum/equipment_preset/iasf/standard
 	name = "Imperial Armed Space Force, Rifleman (Equipped)"
 	flags = EQUIPMENT_PRESET_EXTRA
 	paygrades = list(PAY_SHORT_RMC1 = JOB_PLAYTIME_TIER_0)
