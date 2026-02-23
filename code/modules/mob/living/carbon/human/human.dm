@@ -1699,7 +1699,7 @@
 		if(FACTION_PMC)
 			alert_type = /atom/movable/screen/text/screen_text/picture/starting/wy
 			platoon = "Azure-15"
-		if(FACTION_TWE)
+		if(FACTION_RMC)
 			alert_type = /atom/movable/screen/text/screen_text/picture/starting/twe
 			platoon = "India Troop"
 	play_screen_text("<u>[SSmapping.configs[SHIP_MAP].map_name]<br></u>" + "[platoon]<br><br>" + human_manifest, alert_type)

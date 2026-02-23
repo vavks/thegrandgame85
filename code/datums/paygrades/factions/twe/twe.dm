@@ -1,7 +1,7 @@
 /datum/paygrade/twe
-	name = "TWE Paygrade"
+	name = "RMC Paygrade"
 	pay_multiplier = 2 // less people = more to pay them
-	default_faction = FACTION_TWE
+	default_faction = FACTION_RMC
 
 //RMC Emlisted
 /datum/paygrade/twe/e1

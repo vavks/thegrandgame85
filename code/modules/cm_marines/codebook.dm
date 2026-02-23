@@ -39,7 +39,7 @@ GLOBAL_LIST_EMPTY(codebook_data)
 
 /obj/item/book/codebook/twe
 	name = "Imperial Authentication Codes"
-	faction = FACTION_TWE
+	faction = FACTION_RMC
 	author = "Royal Marines"
 
 /obj/item/book/codebook/upp

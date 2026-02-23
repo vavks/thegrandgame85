@@ -124,7 +124,7 @@
 
 /obj/structure/machinery/prop/almayer/CICmap/rmc
 	minimap_type = MINIMAP_FLAG_TWE
-	faction = FACTION_TWE
+	faction = FACTION_RMC
 
 /obj/structure/machinery/prop/almayer/CICmap/toc
 	name = "tactical map screen"

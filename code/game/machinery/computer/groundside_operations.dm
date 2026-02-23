@@ -394,7 +394,7 @@
 
 /obj/structure/machinery/computer/groundside_operations/rmc
 	announcement_title = TWE_COMMAND_ANNOUNCE
-	announcement_faction = FACTION_TWE
+	announcement_faction = FACTION_RMC
 	add_pmcs = FALSE
 	lz_selection = FALSE
 	has_squad_overwatch = FALSE
