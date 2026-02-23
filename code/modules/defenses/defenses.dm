@@ -175,7 +175,7 @@
 			faction_group = FACTION_LIST_CANC
 		if(FACTION_FREELANCER)
 			faction_group = FACTION_LIST_FREELANCER
-		if(FACTION_TWE)
+		if(FACTION_RMC)
 			faction_group = FACTION_LIST_TWE
 		if(FACTION_MERCENARY)
 			faction_group = FACTION_LIST_MERCENARY

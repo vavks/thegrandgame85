@@ -194,6 +194,6 @@
 	tablet_name = "RMC Field Commander's Tablet"
 
 	announcement_title = TWE_COMMAND_ANNOUNCE
-	announcement_faction = FACTION_TWE
+	announcement_faction = FACTION_RMC
 	req_access = list(ACCESS_TWE_LEADERSHIP)
 	minimap_type = MINIMAP_FLAG_TWE

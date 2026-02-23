@@ -139,14 +139,14 @@
 	flags = REAGENT_NO_GENERATION
 
 /datum/reagent/vegemite/reaction_mob(mob/target_mob, method=TOUCH, volume, permeable)
-	if(target_mob.faction != FACTION_TWE)
+	if(target_mob.faction != FACTION_RMC)
 		to_chat(target_mob, (SPAN_ALERTWARNING("God... it's disgusting... eating that was not a good idea.")))
 
 /datum/reagent/vegemite/on_mob_life(mob/living/carbon/target_mob, potency = 1, delta_time)
 	. = ..()
 	if(!.)
 		return
-	if(prob(4) && ishuman(target_mob) && target_mob.faction != FACTION_TWE)
+	if(prob(4) && ishuman(target_mob) && target_mob.faction != FACTION_RMC)
 		var/mob/living/carbon/human/target_human = target_mob
 		target_mob.make_dizzy(10)
 		target_human.vomit()

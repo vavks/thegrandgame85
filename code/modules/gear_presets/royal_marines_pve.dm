@@ -8,7 +8,7 @@
 	role_comm_title = "RM"
 	access = list(ACCESS_WY_GENERAL, ACCESS_TWE_COMMANDO)
 	faction_group = FACTION_LIST_TWE
-	faction = FACTION_TWE
+	faction = FACTION_RMC
 	idtype = /obj/item/card/id/dogtag
 	assignment = JOB_TWE_RMC_RIFLEMAN
 	rank = JOB_TWE_RMC_RIFLEMAN
@@ -119,6 +119,8 @@
 	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/lightpack, WEAR_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/device/healthanalyzer/soul, WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/tool/crowbar/tactical, WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/medkit/full_advanced, WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/medkit/full_advanced, WEAR_IN_BACK)
 	//waist
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/medical/lifesaver/rmc/synth, WEAR_WAIST)
 	//limbs

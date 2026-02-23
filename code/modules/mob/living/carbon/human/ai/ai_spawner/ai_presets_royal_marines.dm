@@ -1,5 +1,5 @@
 /datum/human_ai_equipment_preset/twe
-	faction = FACTION_TWE
+	faction = FACTION_RMC
 
 /datum/human_ai_equipment_preset/twe/standard
 	name = "TWE Royal Marines Commando - Standard"

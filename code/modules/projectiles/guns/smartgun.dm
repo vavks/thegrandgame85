@@ -604,7 +604,7 @@
 
 /obj/item/weapon/gun/smartgun/rmc/Initialize(mapload, ...)
 	. = ..()
-	MD.iff_signal = FACTION_TWE
+	MD.iff_signal = FACTION_RMC
 
 /obj/item/weapon/gun/smartgun/rmc/handle_starting_attachment()
 	..()

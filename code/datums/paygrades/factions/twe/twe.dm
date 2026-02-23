@@ -1,9 +1,9 @@
 /datum/paygrade/twe
-	name = "TWE Paygrade"
+	name = "RMC Paygrade"
 	pay_multiplier = 2 // less people = more to pay them
-	default_faction = FACTION_TWE
+	default_faction = FACTION_RMC
 
-//RMC Emlisted
+//RMC Enlisted
 /datum/paygrade/twe/e1
 	paygrade = PAY_SHORT_RMC1
 	name = "Marine"
@@ -107,3 +107,4 @@
 	prefix = "Brig"
 	pay_multiplier = 10
 	officer_grade = GRADE_FLAG
+

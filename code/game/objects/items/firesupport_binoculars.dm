@@ -242,7 +242,7 @@
 	usable_shipside = TRUE
 
 /obj/item/device/binoculars/fire_support/twe
-	faction = FACTION_TWE
+	faction = FACTION_RMC
 
 /obj/item/device/binoculars/fire_support/twe/usable_shipside
 	usable_shipside = TRUE

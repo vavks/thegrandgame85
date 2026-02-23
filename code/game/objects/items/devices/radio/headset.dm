@@ -712,6 +712,14 @@
 	)
 	locate_setting = TRACKER_PLTCO
 
+/obj/item/device/radio/headset/almayer/marine/solardevils/iasf
+	name = "Imperial Armed Space Force headset"
+	desc = "A standard headset used by the TWE's regular Imperial Armed Space Forces."
+	icon_state = "rmc_headset"
+	item_state = "rmc_headset"
+	minimap_type = MINIMAP_FLAG_TWE
+	frequency = IASF_FREQ
+
 /obj/item/device/radio/headset/almayer/marine/solardevils/foxtrot
 	frequency = CRYO_FREQ
 

@@ -432,7 +432,7 @@
 	usable = TRUE
 	squad_one_access = ACCESS_TWE_SQUAD_ONE
 	squad_two_access = ACCESS_TWE_SQUAD_TWO
-	faction = FACTION_TWE
+	faction = FACTION_RMC
 
 /datum/squad/marine/rmc/New()
 	. = ..()

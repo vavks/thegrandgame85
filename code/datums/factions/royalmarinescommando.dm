@@ -1,6 +1,6 @@
 /datum/faction/royal_marines_commando
 	name = "Royal Marines Commando"
-	faction_tag = FACTION_TWE
+	faction_tag = FACTION_RMC
 
 /datum/faction/royal_marines_commando/modify_hud_holder(image/holder, mob/living/carbon/human/H)
 	var/hud_icon_state

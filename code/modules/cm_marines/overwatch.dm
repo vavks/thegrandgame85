@@ -941,7 +941,7 @@
 /obj/structure/machinery/computer/overwatch/pmc
 	faction = FACTION_PMC
 /obj/structure/machinery/computer/overwatch/twe
-	faction = FACTION_TWE
+	faction = FACTION_RMC
 /obj/structure/machinery/computer/overwatch/freelance
 	faction = FACTION_FREELANCER
 
