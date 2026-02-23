@@ -26,7 +26,7 @@
 	role_comm_title = "IASF"
 	assignment = JOB_TWE_IASF_RIFLEMAN
 	rank = JOB_TWE_IASF_RIFLEMAN
-	skills = /datum/skills/iasf
+	skills = /datum/skills/rmc
 	access = list(ACCESS_WY_GENERAL, ACCESS_TWE_COMMANDO)
 
 /datum/equipment_preset/iasf/standard/load_gear(mob/living/carbon/human/new_human)
@@ -80,7 +80,7 @@
 	role_comm_title = "IASF GPMG"
 	assignment = JOB_TWE_IASF_SMARTGUNNER
 	rank = JOB_TWE_IASF_SMARTGUNNER
-	skills = /datum/skills/iasf/smartgun
+	skills = /datum/skills/rmc/smartgun
 	access = list(ACCESS_WY_GENERAL, ACCESS_TWE_COMMANDO)
 
 /datum/equipment_preset/royal_marine/machinegun/load_gear(mob/living/carbon/human/new_human)
@@ -133,7 +133,7 @@
 	role_comm_title = "IASF Med"
 	assignment = JOB_TWE_IASF_MEDIC
 	rank = JOB_TWE_IASF_MEDIC
-	skills = /datum/skills/iasf/medic
+	skills = /datum/skills/rmc/medic
 	access = list(ACCESS_WY_GENERAL, ACCESS_TWE_COMMANDO, ACCESS_TWE_MEDICAL)
 
 /datum/equipment_preset/royal_marine/medic/load_gear(mob/living/carbon/human/new_human)
@@ -245,7 +245,7 @@
 	role_comm_title = "IASF STL"
 	assignment = JOB_TWE_RMC_SECTIONLEADER
 	rank = JOB_TWE_RMC_SECTIONLEADER
-	skills = /datum/skills/iasf/leader
+	skills = /datum/skills/rmc/leader
 	access = list(ACCESS_WY_GENERAL, ACCESS_WY_FLIGHT, ACCESS_TWE_COMMANDO, ACCESS_TWE_LEADERSHIP)
 
 /datum/equipment_preset/royal_marine/leader/load_gear(mob/living/carbon/human/new_human)
@@ -407,7 +407,7 @@
 	role_comm_title = "IASF OC"
 	assignment = JOB_TWE_IASF_COMMANDER
 	rank = JOB_TWE_IASF_COMMANDER
-	skills = /datum/skills/iasf/officer
+	skills = /datum/skills/rmc/officer
 	access = list(ACCESS_WY_GENERAL, ACCESS_TWE_COMMANDO, ACCESS_TWE_LEADERSHIP, ACCESS_TWE_SENIOR_LEAD)
 
 /datum/equipment_preset/royal_marine/captain/load_gear(mob/living/carbon/human/new_human)
