@@ -595,7 +595,7 @@
 	suit_restricted = FALSE
 
 /obj/item/clothing/under/marine/veteran/UPP/army/alt
-	name = "\improper UPP Army fatigues"
+	name = "\improper UPP army fatigues"
 	desc = "A set of UPP fatigues, mass produced for the Armed Collective of the Union of Progressive Peoples. A rare sight, especially in 3WE zones. This particular set sports the standard UPP pattern of the UPP Army's 202nd Infantry Regiment."
 	icon_state = "upp_army_yellow_uniform"
 	worn_state = "upp_army_yellow_uniform"
@@ -619,11 +619,18 @@
 /obj/item/clothing/under/marine/veteran/UPP/naval
 	name = "\improper UPP naval infantry uniform"
 	flags_armor_protection = BODY_FLAG_GROIN|BODY_FLAG_LEGS
-	desc = "A pair of black bell bottom naval pants matched with a blue telnyashka, commonly worn by those not currently deployed in the field."
+	desc = "A pair of black bell bottom naval pants matched with a blue telnyashka."
 	icon_state = "upp_uniform_naval"
 	worn_state = "upp_uniform_naval"
 	flags_jumpsuit = UNIFORM_SLEEVE_CUT
 	valid_accessory_slots = list(ACCESSORY_SLOT_UTILITY, ACCESSORY_SLOT_ARMBAND, ACCESSORY_SLOT_MEDAL, ACCESSORY_SLOT_UTILITY, ACCESSORY_SLOT_HOLSTER)
+
+/obj/item/clothing/under/marine/veteran/UPP/naval/alt
+	name = "\improper UPP naval infantry fatigues"
+	desc = "A rare set of UPP fatigues, designed and produced for use in forested environments by the navy's NSPRS units."
+	icon_state = "upp_uniform_naval_alt"
+	worn_state = "upp_uniform_naval_alt"
+	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE|UNIFORM_JACKET_REMOVABLE|UNIFORM_SLEEVE_CUTTABLE
 
 // UPP SOF
 
