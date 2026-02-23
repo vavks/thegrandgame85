@@ -1110,48 +1110,56 @@
 
 //=====================THREE WORLD EMPIRE========================\\
 
-/obj/item/clothing/under/marine/veteran/royal_marine
-	name = "Royal Marine uniform"
-	desc = "Subdued-camouflage field uniform of the Royal Marines Commando. Has venlar armor inserts at critical areas to protect from blades and ballistics."
+/obj/item/clothing/under/marine/twe
+	name = "IASF No.8 combat uniform"
+	desc = "Standard issue No.8 Pattern BDU used by the Imperial Armed Space Force. Identical in cut and protection to the Royal Marine Commando variant, but issued in woodland camouflage. Lightweight Kevlar mesh offers limited protection against shrapnel and close-quarters threats."
 	icon = 'icons/obj/items/clothing/uniforms/TWE.dmi'
 	item_icons = list(
 		WEAR_BODY = 'icons/mob/humans/onmob/clothing/uniforms/TWE.dmi',
 	)
-	icon_state = "rmc_uniform"
-	worn_state = "rmc_uniform"
+	icon_state = "iasf_uniform"
+	worn_state = "iasf_uniform"
 	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE|UNIFORM_JACKET_REMOVABLE
+	flags_atom = NO_SNOW_TYPE|NO_NAME_OVERRIDE
 
-/obj/item/clothing/under/marine/veteran/royal_marine/Initialize()
+/obj/item/clothing/under/marine/twe/Initialize()
 	. = ..()
 	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE|UNIFORM_JACKET_REMOVABLE
 //initalizes the item because if you don't, it doesn't set the flags_jumpsuit for ??? reason
 //downside is that all subsequent children have the same flags for whatever reason. doesnt break anything, so it's probably fine.
 
-/obj/item/clothing/under/marine/veteran/royal_marine/tl
+/obj/item/clothing/under/marine/twe/service
+	name = "IASF No.2 service uniform"
+	desc = "A formal No.2 service uniform worn by IASF officers. Features the same upper torso cut as the No.8 BDU, but paired with pressed khaki trousers. Issued for inspections, ceremonial duties, or when deployed in an advisory role."
+	icon_state = "iasf_uniform_service"
+	worn_state = "iasf_uniform_service"
+
+/obj/item/clothing/under/marine/twe/rmc
+	name = "Royal Marine uniform"
+	desc = "Subdued-camouflage field uniform of the Royal Marines Commando. Has venlar armor inserts at critical areas to protect from blades and ballistics."
+	icon_state = "rmc_uniform"
+	worn_state = "rmc_uniform"
+
+
+
+/obj/item/clothing/under/marine/twe/rmc/tl
 	name = "Royal Marine team leader uniform"
 	icon_state = "rmc_uniform_teaml"
 	worn_state = "rmc_uniform_teaml"
 
-/obj/item/clothing/under/marine/veteran/royal_marine/lt
+/obj/item/clothing/under/marine/twe/rmc/lt
 	name = "Royal Marine officer field uniform"
 	desc = "Subdued-camouflage field-officer uniform of the Royal Marines Commando. Has venlar armor inserts at critical areas to protect from blades and ballistics."
 	icon_state = "rmc_uniform_lt"
 	worn_state = "rmc_uniform_lt"
 	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE
 
-/obj/item/clothing/under/marine/veteran/royal_marine/lt/service
+/obj/item/clothing/under/marine/twe/rmc/lt/service
 	name = "Royal Marine officer service uniform"
 	desc = "The officers uniform of the Royal Marines Commando. Commonly seen worn by high-ranking officers who don't typically take to the field."
 	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE
 	icon_state = "rmc_uniform_service"
 	worn_state = "rmc_uniform_service"
-
-/obj/item/clothing/under/marine/veteran/royal_marine/iasf
-	name = "IASF No.8 combat uniform"
-	desc = "Standard issue No.8 Pattern BDU used by the Imperial Armed Space Force. Identical in cut and protection to the Royal Marine Commando variant, but issued in woodland camouflage. Lightweight Kevlar mesh offers limited protection against shrapnel and close-quarters threats."
-	icon_state = "iasf_uniform"
-	worn_state = "iasf_uniform"
-	flags_atom = FPRINT
 
 /obj/item/clothing/under/marine/pve_mopp
 	name = "\improper M2 MOPP suit"
