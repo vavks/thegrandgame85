@@ -107,4 +107,3 @@
 	prefix = "Brig"
 	pay_multiplier = 10
 	officer_grade = GRADE_FLAG
-

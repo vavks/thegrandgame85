@@ -553,6 +553,11 @@
 	sensor_faction = FACTION_UPP
 	armor_internaldamage = CLOTHING_ARMOR_MEDIUMLOW
 
+/obj/item/clothing/under/marine/veteran/UPP/Initialize()
+	. = ..()
+	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE|UNIFORM_JACKET_REMOVABLE|UNIFORM_SLEEVE_CUTTABLE
+//more quick and dirty flag jumpsuit fixes
+
 /obj/item/clothing/under/marine/veteran/UPP/boiler
 	name = "\improper UPP operations boilersuit"
 	desc = "It's a deep green boilersuit common with UPP Armed Collective personnel outside of combat zones but still featuring venlar armor inserts at critical areas to protect from blades and low caliber ballistics."
