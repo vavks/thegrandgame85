@@ -632,7 +632,7 @@
 	valid_accessory_slots = list(ACCESSORY_SLOT_UTILITY, ACCESSORY_SLOT_ARMBAND, ACCESSORY_SLOT_MEDAL, ACCESSORY_SLOT_UTILITY, ACCESSORY_SLOT_HOLSTER)
 
 /obj/item/clothing/under/marine/veteran/UPP/naval/alt
-	name = "\improper UPP naval infantry fatigues"
+	name = "\improper UPP NSPRS fatigues"
 	desc = "A rare set of UPP fatigues, designed and produced for use in forested environments by the navy's NSPRS units."
 	icon_state = "upp_uniform_naval_alt"
 	worn_state = "upp_uniform_naval_alt"
