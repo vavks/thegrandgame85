@@ -1519,3 +1519,34 @@
 	worn_state = "army_jumpsuit"
 	desc = "Standard-issue Army uniform in a two-tone desert/temperate color scheme, complete with venlar armor inserts at critical areas to protect from blades and ballistics."
 	flags_atom = NO_SNOW_TYPE|NO_NAME_OVERRIDE
+
+/obj/item/clothing/under/colonist/steward
+	name = "steward utilities"
+	desc = "A stylish brown vest and shorts - uniforms like this are often worn by clerks and shop stewards."
+	icon_state = "steward"
+	worn_state = "steward"
+	has_sensor = UNIFORM_HAS_SENSORS
+
+	item_icons = list(
+		WEAR_BODY = 'icons/mob/humans/onmob/uniform_1.dmi',
+	)
+
+/obj/item/clothing/under/rank/utility/gray
+	name = "\improper Gray utility uniform"
+	desc = "A stylish gray jumpsuit, popularly issued to UA contract workers on the frontier."
+	icon_state = "grey_utility"
+	worn_state = "grey_utility"
+
+	item_icons = list(
+		WEAR_BODY = 'icons/mob/humans/onmob/uniform_1.dmi',
+	)
+
+
+/obj/item/clothing/under/rank/utility/yellow
+	name = "\improper Yellow utility uniform"
+	desc = "A grey utility uniform with yellow suspenders, made for shipside crew."
+	icon_state = "yellow_utility"
+	worn_state = "yellow_utility"
+	item_icons = list(
+		WEAR_BODY = 'icons/mob/humans/onmob/uniform_1.dmi',
+	)
