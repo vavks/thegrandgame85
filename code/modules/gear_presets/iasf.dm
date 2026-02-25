@@ -243,12 +243,12 @@
 	flags = EQUIPMENT_PRESET_EXTRA
 	paygrades = list(PAY_SHORT_IASF3 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "IASF STL"
-	assignment = JOB_TWE_RMC_SECTIONLEADER
-	rank = JOB_TWE_RMC_SECTIONLEADER
+	assignment = JOB_TWE_IASF_SECTIONLEADER
+	rank = JOB_TWE_IASF_SECTIONLEADER
 	skills = /datum/skills/rmc/leader
 	access = list(ACCESS_WY_GENERAL, ACCESS_WY_FLIGHT, ACCESS_TWE_COMMANDO, ACCESS_TWE_LEADERSHIP)
 
-/datum/equipment_preset/royal_marine/leader/load_gear(mob/living/carbon/human/new_human)
+/datum/equipment_preset/iasf/leader/load_gear(mob/living/carbon/human/new_human)
 	//back
 	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/rmc/heavy, WEAR_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/device/motiondetector/hacked/twe(new_human), WEAR_IN_BACK)
@@ -292,13 +292,13 @@
 		new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/rebreather/scarf(new_human), WEAR_FACE)
 
 
-/datum/equipment_preset/royal_marine/leader/tl
+/datum/equipment_preset/iasf/leader/tl
 	name = "Imperial Armed Space Force, Team Leader (Equipped)"
 	flags = EQUIPMENT_PRESET_EXTRA
 	paygrades = list(PAY_SHORT_IASF3 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "IASF TL"
-	assignment = JOB_TWE_RMC_TEAMLEADER
-	rank = JOB_TWE_RMC_TEAMLEADER
+	assignment = JOB_TWE_IASF_TEAMLEADER
+	rank = JOB_TWE_IASF_TEAMLEADER
 
 //*****************************************************************************************************/
 
@@ -307,8 +307,8 @@
 	flags = EQUIPMENT_PRESET_EXTRA
 	paygrades = list(PAY_SHORT_IASF4 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "IASF TS"
-	assignment = JOB_TWE_RMC_TROOPLEADER
-	rank = JOB_TWE_RMC_TROOPLEADER
+	assignment = JOB_TWE_IASF_TROOPLEADER
+	rank = JOB_TWE_IASF_TROOPLEADER
 	skills = /datum/skills/rmc/officer
 	access = list(ACCESS_WY_GENERAL, ACCESS_WY_FLIGHT, ACCESS_TWE_COMMANDO, ACCESS_TWE_LEADERSHIP, ACCESS_TWE_ARMORY)
 
