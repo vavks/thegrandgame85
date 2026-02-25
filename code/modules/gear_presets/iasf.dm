@@ -22,7 +22,7 @@
 /datum/equipment_preset/iasf/standard
 	name = "Imperial Armed Space Force, Rifleman (Equipped)"
 	flags = EQUIPMENT_PRESET_EXTRA
-	paygrades = list(PAY_SHORT_RMC1 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_IASF1 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "IASF"
 	assignment = JOB_TWE_IASF_RIFLEMAN
 	rank = JOB_TWE_IASF_RIFLEMAN
@@ -42,11 +42,11 @@
 	new_human.equip_to_slot_or_del(new /obj/item/device/overwatch_camera/twe(new_human), WEAR_R_EAR)
 	//head
 	if(prob(65))
-		new_human.equip_to_slot_or_del(new /obj/item/clothing/head/cmcap/royal_marine(new_human), WEAR_HEAD)
-		new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/veteran/pmc/gunner/rmc(new_human), WEAR_IN_BACK)
+		new_human.equip_to_slot_or_del(new /obj/item/clothing/head/cmcap/royal_marine/iasf(new_human), WEAR_HEAD)
+		new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/veteran/royal_marine/generic(new_human), WEAR_IN_BACK)
 	else
-		new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/veteran/pmc/gunner/rmc(new_human), WEAR_HEAD)
-		new_human.equip_to_slot_or_del(new /obj/item/clothing/head/cmcap/royal_marine(new_human), WEAR_IN_BACK)
+		new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/veteran/royal_marine/generic(new_human), WEAR_HEAD)
+		new_human.equip_to_slot_or_del(new /obj/item/clothing/head/cmcap/royal_marine/iasf(new_human), WEAR_IN_BACK)
 	//uniform
 	add_iasf_uniform(new_human)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/storage/smallpouch/rmc(new_human), WEAR_ACCESSORY)
@@ -57,9 +57,9 @@
 	//jacket
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/veteran/royal_marine/heavy(new_human), WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/storage/webbing/m3/uppsmall/rmc/preset(new_human), WEAR_ACCESSORY)
-	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/rifle/nsg23/rmc/preloaded(new_human), WEAR_J_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/rifle/rmc_f90(new_human), WEAR_J_STORE)
 	//waist
-	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/rmc/nsg(new_human), WEAR_WAIST)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/rmc/f90(new_human), WEAR_WAIST)
 	//limbs
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/gloves/marine(new_human), WEAR_HANDS)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/marine/rmc/knife(new_human), WEAR_FEET)
@@ -97,10 +97,10 @@
 	//head
 	if(prob(65))
 		new_human.equip_to_slot_or_del(new /obj/item/clothing/head/cmcap/royal_marine/iasf(new_human), WEAR_HEAD)
-		new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/veteran/pmc/gunner/rmc(new_human), WEAR_IN_BACK)
+		new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/veteran/royal_marine/generic(new_human), WEAR_IN_BACK)
 	else
-		new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/veteran/pmc/gunner/rmc(new_human), WEAR_HEAD)
-		new_human.equip_to_slot_or_del(new /obj/item/clothing/head/cmcap/royal_marine(new_human), WEAR_IN_BACK)
+		new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/veteran/royal_marine/generic(new_human), WEAR_HEAD)
+		new_human.equip_to_slot_or_del(new /obj/item/clothing/head/cmcap/royal_marine/iasf(new_human), WEAR_IN_BACK)
 	//uniform
 	add_iasf_uniform(new_human)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/storage/smallpouch/rmc(new_human), WEAR_ACCESSORY)
