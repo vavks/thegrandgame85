@@ -97,9 +97,9 @@
 	//head
 	if(prob(65))
 		new_human.equip_to_slot_or_del(new /obj/item/clothing/head/cmcap/royal_marine/iasf(new_human), WEAR_HEAD)
-		new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/veteran/pmc/gunner/rmc(new_human), WEAR_IN_BACK)
+		new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/veteran/royal_marine/generic(new_human), WEAR_IN_BACK)
 	else
-		new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/veteran/pmc/gunner/rmc(new_human), WEAR_HEAD)
+		new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/veteran/royal_marine/generic(new_human), WEAR_HEAD)
 		new_human.equip_to_slot_or_del(new /obj/item/clothing/head/cmcap/royal_marine/iasf(new_human), WEAR_IN_BACK)
 	//uniform
 	add_iasf_uniform(new_human)

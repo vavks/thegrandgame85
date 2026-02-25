@@ -81,9 +81,9 @@ Radiochat range: 1441 to 1489 (most devices refuse to be tune to other frequency
 #define ARM_FREQ 1228
 #define GRD_FREQ 1229
 
-//TWE Channels (1290-1291)
-#define RMC_FREQ 1290
-#define IASF_FREQ 1291
+//TWE Channels (1300-1301)
+#define RMC_FREQ 1300
+#define IASF_FREQ 1301
 
 //WY Channels (1230-1249)
 #define WY_FREQ 1231
