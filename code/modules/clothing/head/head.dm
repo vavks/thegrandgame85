@@ -846,9 +846,9 @@
 	desc = "A standard military beanie."
 	icon_state = "rmc_beanie"
 	item_state = "rmc_beanie"
-	icon = 'icons/obj/items/clothing/cm_hats.dmi'
+	icon = 'icons/obj/items/clothing/hats/TWE.dmi'
 	item_icons = list(
-		WEAR_HEAD = 'icons/mob/humans/onmob/head_1.dmi'
+		WEAR_HEAD = 'icons/mob/humans/onmob/clothing/hats/TWE.dmi'
 	)
 
 /obj/item/clothing/head/beanie/royal_marine/turban
