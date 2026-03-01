@@ -376,6 +376,11 @@ GLOBAL_LIST_INIT_TYPED(cardboard_recipes, /datum/stack_recipe, list ( \
 		new/datum/stack_recipe("empty magazine box (Type71)", /obj/item/ammo_box/magazine/type71/empty), \
 		new/datum/stack_recipe("empty magazine box (Type71 AP)", /obj/item/ammo_box/magazine/type71/ap/empty), \
 		null, \
+		new/datum/stack_recipe("empty magazine box (AK4047)", /obj/item/ammo_box/magazine/ak4047/empty), \
+		new/datum/stack_recipe("empty magazine box (AK4047 AP)", /obj/item/ammo_box/magazine/ak4047/ap/empty), \
+		new/datum/stack_recipe("empty magazine box (AK4047 HEAP)", /obj/item/ammo_box/magazine/ak4047/heap/empty), \
+		new/datum/stack_recipe("empty magazine box (AK4047 Incen)", /obj/item/ammo_box/magazine/ak4047/heap/empty), \
+		null, \
 		new/datum/stack_recipe("empty magazine box (Type73)", /obj/item/ammo_box/magazine/type73/empty), \
 		new/datum/stack_recipe("empty magazine box (Type73 High-Impact)", /obj/item/ammo_box/magazine/type73/impact/empty), \
 		null, \
