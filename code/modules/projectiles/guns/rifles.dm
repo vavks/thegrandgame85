@@ -1516,6 +1516,87 @@
 /obj/item/weapon/gun/rifle/type71/carbine/set_gun_attachment_offsets()
 	attachable_offset = list("muzzle_x" = 35, "muzzle_y" = 17,"rail_x" = 10, "rail_y" = 22, "under_x" = 23, "under_y" = 14, "stock_x" = 21, "stock_y" = 18, "side_rail_x" = 24, "side_rail_y" = 17)
 
+//-------------------------------------------------------
+//UPP AK-4047 RIFLE
+
+/obj/item/weapon/gun/rifle/ak4047
+	name = "\improper AK-4047 pulse assault rifle"
+	desc = "The UPP answer to the M41A MK2 Pulse Rifle, the AK-4047 is a reliable and powerful substitute chambered in 10x27mm. While it lacks the precision of smaller M41A caliber, the AK-4047 is sturdier than the USCMC weapon. Thrown it off a cliff and leave underwater for a month, and you will be able to still fire it with no issues."
+	icon = 'icons/obj/items/weapons/guns/guns_by_faction/upp.dmi'
+	icon_state = "ak4047"
+	item_state = "ak4047"
+	fire_sound = 'sound/weapons/gun_type71.ogg'
+	reload_sound = 'sound/weapons/handling/m41_reload.ogg'
+	unload_sound = 'sound/weapons/handling/m41_unload.ogg'
+	current_mag = /obj/item/ammo_magazine/rifle/ak4047
+	attachable_allowed = list(
+		/obj/item/attachable/stock/rifle/collapsible/ak4047, // stock
+		/obj/item/attachable/magnetic_harness, // Rail
+		/obj/item/attachable/sling,
+		/obj/item/attachable/scope,
+		/obj/item/attachable/scope/pve,
+		/obj/item/attachable/scope/upp,
+		/obj/item/attachable/scope/mini,
+		/obj/item/attachable/scope/mini/upp,
+		/obj/item/attachable/reddot,
+		/obj/item/attachable/reddot/upp,
+		/obj/item/attachable/reflex,
+		/obj/item/attachable/reflex/upp,
+		/obj/item/attachable/suppressor, // Muzzle
+		/obj/item/attachable/bayonet,
+		/obj/item/attachable/bayonet/upp,
+		/obj/item/attachable/bayonet/wy,
+		/obj/item/attachable/extended_barrel,
+		/obj/item/attachable/heavy_barrel,
+		/obj/item/attachable/attached_gun/grenade/type71/ag80, // underbarrel
+		/obj/item/attachable/attached_gun/grenade/type71/ag80/preloaded,
+		/obj/item/attachable/attached_gun/grenade,
+		/obj/item/attachable/attached_gun/flamer,
+		/obj/item/attachable/attached_gun/flamer/advanced,
+		/obj/item/attachable/attached_gun/shotgun,
+		/obj/item/attachable/attached_gun/extinguisher,
+		/obj/item/attachable/verticalgrip,
+		/obj/item/attachable/verticalgrip/upp,
+		/obj/item/attachable/angledgrip,
+		/obj/item/attachable/lasersight, // Side Rail
+		/obj/item/attachable/lasersight/upp,
+		/obj/item/attachable/flashlight,
+		)
+
+	flags_gun_features = GUN_AUTO_EJECTOR|GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
+	map_specific_decoration = FALSE
+	start_automatic = TRUE
+	starting_attachment_types = list(/obj/item/attachable/stock/rifle/collapsible/ak4047)
+
+/obj/item/weapon/gun/rifle/ak4047/set_gun_attachment_offsets()
+	attachable_offset = list("muzzle_x" = 32, "muzzle_y" = 19, "rail_x" = 13, "rail_y" = 23, "under_x" = 20, "under_y" = 14, "stock_x" = 9, "stock_y" = 13, "side_rail_x" = 18, "side_rail_y" = 18)
+
+/obj/item/weapon/gun/rifle/ak4047/set_gun_config_values()
+	..()
+	set_fire_delay(FIRE_DELAY_TIER_11)
+	set_burst_amount(BURST_AMOUNT_TIER_3)
+	set_burst_delay(FIRE_DELAY_TIER_11)
+	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_8
+	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_6
+	scatter = SCATTER_AMOUNT_TIER_10
+	burst_scatter_mult = SCATTER_AMOUNT_TIER_10
+	scatter_unwielded = SCATTER_AMOUNT_TIER_4
+	recoil_unwielded = RECOIL_AMOUNT_TIER_3
+	damage_falloff_mult = 0
+
+/obj/item/weapon/gun/rifle/ak4047/unloaded
+	current_mag = null
+
+/obj/item/weapon/gun/rifle/ak4047/unloaded/platoon
+	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_TRIGGER_SAFETY
+
+/obj/item/weapon/gun/rifle/ak4047/tactical
+	current_mag = /obj/item/ammo_magazine/rifle/ak4047
+	starting_attachment_types = list(/obj/item/attachable/reflex/upp, /obj/item/attachable/suppressor, /obj/item/attachable/verticalgrip, /obj/item/attachable/stock/rifle/collapsible/ak4047)
+
+//-------------------------------------------------------
+//CANC LW-317 CARBINE
+
 /obj/item/weapon/gun/rifle/lw317
 	name = "\improper LW-317 pulse carbine"
 	desc = "Light Weapon, Type 317. Originating from Norcomm before the CANC's absorption, the Type 317 served the CANC's arsenals for close quarters battle. Also preferred for its ease of use among former CANC soldiers."
